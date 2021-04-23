@@ -1,0 +1,26 @@
+{
+  "name": "cssui",
+  "version": "1.0.0",
+  "description": "A simple framework of CSS Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetareticoli/cssUI.git"
+  },
+  "keywords": [
+    "css",
+    "components"
+  ],
+  "author": "Francesco Improta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zetareticoli/cssUI/issues"
+  },
+  "homepage": "https://github.com/zetareticoli/cssUI#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
