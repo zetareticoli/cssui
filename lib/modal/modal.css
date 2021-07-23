@@ -1,0 +1,90 @@
+/* Preview Needs */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2vw;
+  background: #f39c12;
+}
+
+/* Modal properties */
+
+#modal {
+  --modal-background: rgb(255, 255, 255);
+  --modal-level: 999;
+  --modal-max-size: 500px;
+  --modal-overlay-background: rgba(0, 0, 0, .2);
+  --modal-radius: 8px;
+  --modal-size: 80%;
+  --modal-spacing: 1rem;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+[data-modal-overlay] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--modal-overlay-background);
+}
+
+[data-modal] {
+  z-index: var(--modal-level);
+  width: var(--modal-size);
+  max-width: var(--modal-max-size);
+  padding: var(--modal-spacing);
+  border-radius: var(--modal-radius);
+  background-color: var(--modal-background);
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: opacity .3s ease, transform .3s ease;
+  transition-delay: .2s;
+}
+
+#modal:target [data-modal] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styling trigger button for DEMO purpose */
+
+a[href="#modal"] {
+  position: relative;
+  padding: 1rem;
+  border: 1px solid #2c3e50;
+  border-radius: 4px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+}
+
+a[href="#modal"]:hover {
+  top: -1px;
+  border-color: black;
+  box-shadow: 0 5px 5px rgba(0,0,0,.15);
+}

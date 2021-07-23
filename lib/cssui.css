@@ -1,0 +1,14 @@
+:root {
+  --cssui-font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --cssui-gray-lighter: #e5e7eb;
+  --cssui-gray-light: #d1d5db;
+  --cssui-gray-dark: #4b5563;
+  --cssui-gray-darkest: #1f2937;
+  --cssui-padding: 1rem;
+  --cssui-radius: 4px;
+}
+
+body {
+  font-family: var(--cssui-font-family);
+}

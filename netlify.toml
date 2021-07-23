@@ -1,0 +1,31 @@
+[build]
+  publish = "public"
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "16.3.0"
+  NPM_VERSION = "7.16.0"
+  HUGO_VERSION = "0.84.4"
+
+[context.production]
+  command = "hugo --gc --minify"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.next]
+  command = "hugo --gc --minify"
+
+[context.next.environment]
+  HUGO_ENV = "next"
+
+[dev]
+  framework = "#custom"
+  command = "shx rm -rf public resources && hugo server --bind=0.0.0.0 --disableFastRender"
+  targetPort = 1313
+  port = 8888
+  publish = "public"
+  autoLaunch = false

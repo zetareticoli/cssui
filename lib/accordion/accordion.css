@@ -1,0 +1,66 @@
+/* General */
+[data-accordion] {
+  --accordion-animation-timing: .25s;
+  --accordion-border-color: var(--cssui-gray-lighter);
+  --accordion-panel-background: #fff;
+  --accordion-panel-padding: var(--cssui-padding);
+  --accordion-panel-text-color: var(--cssui-gray-darkest);
+  --accordion-title-background: #fff;
+  --accordion-title-spacing: 1rem;
+  --accordion-title-color: var(--cssui-gray-dark);
+  border: 1px solid var(--accordion-border-color);
+  border-radius: var(--cssui-radius);
+}
+
+[data-accordion-item] {
+  width: 100%;
+  overflow: hidden;
+}
+
+[data-accordion-item]:not(:last-child) {
+  border-bottom: 1px solid var(--accordion-border-color);
+}
+
+[data-accordion-item] > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+[data-accordion-item] > label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--accordion-title-spacing);
+  background: var(--accordion-title-background);
+  color: var(--accordion-title-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+[data-accordion-item] > label:hover,
+[data-accordion-item] > input:checked + label  {
+  --accordion-title-color: var(--cssui-gray-darkest);
+  --accordion-title-background: var(--cssui-gray-lighter);
+}
+
+[data-accordion-item] > label > svg {
+  transition: all var(--accordion-animation-timing) ease-out;
+}
+
+[data-accordion-panel] {
+  max-height: 0;
+  padding: 0 var(--accordion-panel-padding);
+  background: var(--accordion-panel-background);
+  color: var(--accordion-panel-text-color);
+  transition: padding var(--accordion-animation-timing) ease;
+}
+
+[data-accordion-item] > input:checked + label > svg {
+  transform: rotate(-180deg);
+}
+
+[data-accordion-item] > input:checked ~ [data-accordion-panel] {
+  max-height: 100vh;
+  padding: var(--accordion-panel-padding);
+}

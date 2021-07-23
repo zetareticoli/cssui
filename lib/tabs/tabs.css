@@ -1,0 +1,69 @@
+:root {
+  --tab-radius: 4px;
+  --tab-background-color: #C4B5FD;
+  --tab-border-color: #C4B5FD;
+  --tab-panel-background: #fff;
+  --tab-spacing: 1rem .5rem;
+  --tab-active-shadow: inset 1px 0 0 var(--tab-border-color), inset -1px 1px 0 var(--tab-border-color), 0 1px 0 white;
+}
+
+/* Preview Needs */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Tabs Defaults */
+
+[data-tab] {
+  display: none;
+}
+
+[data-tab-panel] {
+  position: relative;
+  z-index: 1;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  background-color: var(--tab-panel-background);
+  transition: opacity .3s ease-in-out;
+}
+
+[data-tab-label] {
+  position: relative;
+  bottom: -1px;
+  display: inline-block;
+  padding: var(--tab-spacing);
+  border-top-left-radius: var(--tab-radius, 0);
+  border-top-right-radius: var(--tab-radius, 0);
+  background-color: var(--tab-background-color);
+  cursor: pointer;
+}
+
+[data-tab-label]:hover {
+  --tab-background-color: #c0c0c0;
+}
+
+/* Tab Label Active State */
+
+[data-tab="tab1"]:checked ~ nav [data-tab-label="tab1"],
+[data-tab="tab2"]:checked ~ nav [data-tab-label="tab2"],
+[data-tab="tab3"]:checked ~ nav [data-tab-label="tab3"] {
+  --tab-background-color: #fff;
+  z-index: 10;
+  box-shadow: var(--tab-active-shadow);
+}
+
+/* Tab Panel Active State */
+
+[data-tab="tab1"]:checked ~ nav ~ [data-tab-panel="tab1"],
+[data-tab="tab2"]:checked ~ nav ~ [data-tab-panel="tab2"],
+[data-tab="tab3"]:checked ~ nav ~ [data-tab-panel="tab3"] {
+  visibility: visible;
+  width: 100%;
+  height: auto;
+  padding: var(--tab-spacing);
+  border: 1px solid var(--tab-border-color);
+  opacity: 1;
+}
+
