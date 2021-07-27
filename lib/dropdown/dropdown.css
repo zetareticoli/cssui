@@ -16,6 +16,11 @@
   padding: var(--dropdown-padding);
 }
 
+[data-dropdown] summary:hover {
+  cursor: pointer;
+  background: var(--cssui-gray-lighter);
+}
+
 [data-dropdown] summary::-webkit-details-marker {
   display: none; 
 }
