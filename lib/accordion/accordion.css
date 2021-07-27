@@ -1,6 +1,5 @@
 /* General */
 [data-accordion] {
-  --accordion-animation-timing: .25s;
   --accordion-border-color: var(--cssui-gray-lighter);
   --accordion-panel-background: #fff;
   --accordion-panel-padding: var(--cssui-padding);
@@ -53,7 +52,7 @@
   padding: 0 var(--accordion-panel-padding);
   background: var(--accordion-panel-background);
   color: var(--accordion-panel-text-color);
-  transition: padding var(--accordion-animation-timing) ease;
+  transition: padding var(--cssui-animation-timing) ease;
 }
 
 [data-accordion-item] > input:checked + label > svg {
