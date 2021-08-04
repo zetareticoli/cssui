@@ -1,7 +1,7 @@
 ---
 title: "Modal"
-description: "A single content area with multiple panels, each associated with a header in a list."
-lead: "A single content area with multiple panels, each associated with a header in a list."
+description: "A modal dialog is a dialog that appears on top of the main content and moves the system into a special mode requiring user interaction"
+lead: "A modal dialog is a dialog that appears on top of the main content and moves the system into a special mode requiring user interaction"
 date: 2021-07-14T13:26:54+01:00
 lastmod: 2021-07-14T13:26:54+01:00
 draft: false
@@ -13,4 +13,51 @@ weight: 610
 toc: true
 ---
 
-{{< pattern src="/modal/modal.html" >}}
+## HTML Template
+
+The modal dialog is wrapped in a unique container with both `id=""` and `data-modal` attributes specified.
+
+{{< highlight html >}}
+<div id="modal" data-modal>
+  <!-- Modal  -->
+  <div data-modal-dialog>
+    <h3>Modal title</h3>
+    <p>This is the modal content.</p>
+  </div>
+  <!-- Background, click to close -->
+  <a href="#" data-modal-overlay></a>
+</div>
+{{< /highlight >}}
+
+## Live Demo
+Click on the button below to toggle the modal dialog.
+
+
+<link rel="stylesheet" href="/cssui.css">
+<link rel="stylesheet" href="/modal/modal.css">
+
+<a href="#modal">
+  Open Modal
+</a>
+
+<div id="modal" data-modal>
+  <div data-modal-dialog>
+    <h3>Modal title</h3>
+    <p>This is the modal content.</p>
+  </div>
+  <a href="#" data-modal-overlay></a>
+</div>
+
+## Usage
+
+### Set ID
+
+Set a unique `id` for each modal you want to use in a page.
+
+Example:
+
+```html
+<div id="modal-1" data-modal></div>
+<div id="modal-2" data-modal></div>
+```
+
