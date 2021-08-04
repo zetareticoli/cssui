@@ -10,6 +10,10 @@
   --cssui-radius: 4px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--cssui-font-family);
 }

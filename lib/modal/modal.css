@@ -1,24 +1,8 @@
-/* Preview Needs */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 2vw;
-  background: #f39c12;
-}
-
 /* Modal properties */
 
-#modal {
+[data-modal] {
   --modal-background: rgb(255, 255, 255);
-  --modal-level: 999;
+  --modal-level: 9999;
   --modal-max-size: 500px;
   --modal-overlay-background: rgba(0, 0, 0, .2);
   --modal-radius: 8px;
@@ -38,12 +22,6 @@ body {
   justify-content: center;
 }
 
-#modal:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-
 [data-modal-overlay] {
   position: fixed;
   top: 0;
@@ -53,7 +31,7 @@ body {
   background-color: var(--modal-overlay-background);
 }
 
-[data-modal] {
+[data-modal-dialog] {
   z-index: var(--modal-level);
   width: var(--modal-size);
   max-width: var(--modal-max-size);
@@ -66,7 +44,13 @@ body {
   transition-delay: .2s;
 }
 
-#modal:target [data-modal] {
+[data-modal]:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: var(--modal-level);
+}
+
+[data-modal]:target [data-modal-dialog] {
   opacity: 1;
   transform: translateY(0);
 }
