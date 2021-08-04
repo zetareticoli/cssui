@@ -5,16 +5,16 @@
 <input id="tab2" type="radio" name="tab" data-tab="tab2" />
 <input id="tab3" type="radio" name="tab" data-tab="tab3" />
 <nav>
-  <label for="tab1" data-tab-label="tab1">First Tab</label>
-  <label for="tab2" data-tab-label="tab2">Second Tab</label>
-  <label for="tab3" data-tab-label="tab3">Third Tab</label>
+  <label for="tab1" data-tab-label="tab1" role="tab">First Tab</label>
+  <label for="tab2" data-tab-label="tab2" role="tab">Second Tab</label>
+  <label for="tab3" data-tab-label="tab3" role="tab">Third Tab</label>
 </nav>
-<section data-tab-panel="tab1">
+<section data-tab-panel="tab1" role="tabpanel" aria-labelledby="tab1">
   First Tab Panel
 </section>
-  <section data-tab-panel="tab2">
+  <section data-tab-panel="tab2" role="tabpanel" aria-labelledby="tab1">
   Second Tab Panel
 </section>
-<section data-tab-panel="tab3">
+<section data-tab-panel="tab3" role="tabpanel" aria-labelledby="tab1">
   Third Tab Panel
 </section>
