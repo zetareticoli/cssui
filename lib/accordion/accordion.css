@@ -44,7 +44,7 @@
 }
 
 [data-accordion-item] > label > svg {
-  transition: all var(--accordion-animation-timing) ease-out;
+  transition: all var(--cssui-animation-timing) ease-out;
 }
 
 [data-accordion-panel] {
