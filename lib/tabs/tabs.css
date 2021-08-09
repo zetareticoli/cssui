@@ -1,4 +1,4 @@
-:root {
+[data-tabs] {
   /* --tab-background-color: #fff; */
   --tab-border-color: #F3F4F6;
   --tab-panel-background: #fff;
@@ -9,19 +9,6 @@
   --tab-spacing: 1rem .5rem;
   /* --tab-active-shadow: inset 1px 0 0 var(--tab-border-color), inset -1px 1px 0 var(--tab-border-color), 0 1px 0 white; */
 }
-
-/* Preview Needs */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 2vw;
-  background: #fff;
-}
-
-/* Tabs Defaults */
 
 [data-tab] {
   display: none;
