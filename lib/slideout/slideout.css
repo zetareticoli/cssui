@@ -1,0 +1,41 @@
+/* ------------------------------
+Changing the sliding in animation
+/* LTR - From -100% to 0
+/* RTL - From -panelsize to 0
+------------------------------ */
+
+[data-slideout-panel] {
+  --slideout-animation: transform .2s ease;
+  --slideout-background: #e5e7eb;
+  --slideout-shadow-color: #9ca3af;
+  --slideout-padding: 1rem;
+  --slideout-position: -100%;
+  --slideout-size: 33vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: var(--slideout-position); /* LTR */
+  z-index: 9999;
+  /* right: 0; RTL */
+  visibility: hidden;
+  width: var(--slideout-size);
+  padding: var(--slideout-padding);
+  background: var(--slideout-background);
+  box-shadow: 0 2px 6px var(--slideout-shadow-color);
+  transition: var(--slideout-animation);
+}
+
+[data-slideout-panel]:target {
+  --slideout-position: 0;
+  visibility: visible;
+}
+
+[data-slideout-header] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+[data-slideout-close] {
+  color: black;
+}
