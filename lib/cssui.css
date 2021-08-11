@@ -17,3 +17,11 @@
 body {
   font-family: var(--cssui-font-family);
 }
+
+.preview {
+  background-color: var(--cssui-gray-lighter);
+}
+
+.preview + .highlight pre {
+  margin-top: 0;
+}
