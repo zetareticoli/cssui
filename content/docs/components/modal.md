@@ -13,9 +13,28 @@ weight: 610
 toc: true
 ---
 
-## HTML Template
+Click on the button below to toggle the modal dialog.
 
-The modal dialog is wrapped in a unique container with both `id=""` and `data-modal` attributes specified.
+<link rel="stylesheet" href="/cssui.css">
+<link rel="stylesheet" href="/modal/modal.css">
+
+<div class="preview" style="text-align: center">
+<a href="#modal">
+  Open Modal
+</a>
+</div>
+
+<div id="modal" data-modal>
+  <div data-modal-dialog>
+    <h3>Modal title</h3>
+    <p>This is the modal content.</p>
+  </div>
+  <a href="#" data-modal-overlay></a>
+</div>
+
+## Usage
+
+The modal dialog is wrapped in a unique container with both `id` and `data-modal` attributes specified.
 
 {{< highlight html >}}
 <div id="modal" data-modal>
@@ -28,25 +47,6 @@ The modal dialog is wrapped in a unique container with both `id=""` and `data-mo
   <a href="#" data-modal-overlay></a>
 </div>
 {{< /highlight >}}
-
-## Live Demo
-Click on the button below to toggle the modal dialog.
-
-
-<link rel="stylesheet" href="/cssui.css">
-<link rel="stylesheet" href="/modal/modal.css">
-
-<a href="#modal">
-  Open Modal
-</a>
-
-<div id="modal" data-modal>
-  <div data-modal-dialog>
-    <h3>Modal title</h3>
-    <p>This is the modal content.</p>
-  </div>
-  <a href="#" data-modal-overlay></a>
-</div>
 
 ## Usage
 
