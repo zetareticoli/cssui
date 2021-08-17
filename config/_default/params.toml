@@ -3,8 +3,8 @@
 ## Homepage
 title = "CSSUI"
 titleSeparator = "-"
-titleAddition = "Pure CSS UI Components"
-description = "CSSUI is a library of interactive user interface components realized in pure HTML and CSS"
+titleAddition = "Interactive Components Library in Pure CSS"
+description = "CSSUI is a library of interactive user interface components realized in pure CSS"
 
 ## Open Graph
 images = ["doks.png"]
