@@ -48,8 +48,6 @@ The modal dialog is wrapped in a unique container with both `id` and `data-modal
 </div>
 {{< /highlight >}}
 
-## Usage
-
 ### Set ID
 
 Set a unique `id` for each modal you want to use in a page.
@@ -58,6 +56,5 @@ Example:
 
 ```html
 <div id="modal-1" data-modal></div>
-<div id="modal-2" data-modal></div>
 ```
 
