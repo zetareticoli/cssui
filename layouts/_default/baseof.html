@@ -14,11 +14,13 @@
   {{ end -}}
   <body class="{{ .Scratch.Get "class" }}">
     {{ partial "header/header.html" . }}
+    <section class="section-bg">
     <div class="wrap container" role="document">
       <div class="content">
         {{ block "main" . }}{{ end }}
       </div>
     </div>
+    </section>
     {{ block "sidebar-prefooter" . }}{{ end }}
     {{ block "sidebar-footer" . }}{{ end }}
     {{ partial "footer/footer.html" . }}

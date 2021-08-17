@@ -377,3 +377,7 @@ body.dark .copy-status:active::after {
   display: block;
   color: $link-color-dark;
 }
+
+body.dark.home .section-bg {
+  background: url(images/page-bg-dark.jpg) 0 0 no-repeat;
+}
