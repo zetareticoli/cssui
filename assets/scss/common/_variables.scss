@@ -16,7 +16,7 @@ $yellow:   #ffe000;
 $black:    #1d2d35;
 $beige:    #fbf7f0;
 // $red:      #e55235;
-$purple:   #5d2f86;
+$purple:   #4f46e5;
 $brown:    #aa9c84;
 
 $blue-300: #8ed6fb;
@@ -34,7 +34,7 @@ $color-btn-text: $white;
 
 $enable-caret:                true;
 $enable-rounded:              true;
-$enable-shadows:              false;
+$enable-shadows:              true;
 $enable-gradients:            false;
 $enable-transitions:          true;
 $enable-reduced-motion:       true;
@@ -63,6 +63,7 @@ $navbar-light-toggler-icon-bg: none;
 
 $body-bg:                   $white;
 $body-color:                $black;
+$body-color-light:          $gray-500;
 
 // Links
 //
