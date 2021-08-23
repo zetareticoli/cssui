@@ -19,9 +19,7 @@ Click on the button below to toggle the modal dialog.
 <link rel="stylesheet" href="/modal/modal.css">
 
 <div class="preview" style="text-align: center">
-<a href="#modal">
-  Open Modal
-</a>
+  <a href="#modal" class="btn btn-primary btn-lg px-4 mb-2">Open Modal</a>
 </div>
 
 <div id="modal" data-modal>

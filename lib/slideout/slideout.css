@@ -5,7 +5,7 @@ Changing the sliding in animation
 ------------------------------ */
 
 [data-slideout-panel] {
-  --slideout-animation: transform .2s ease;
+  --slideout-animation: left .2s ease;
   --slideout-background: #e5e7eb;
   --slideout-shadow-color: #9ca3af;
   --slideout-padding: 1rem;
@@ -17,7 +17,7 @@ Changing the sliding in animation
   left: var(--slideout-position); /* LTR */
   z-index: 9999;
   /* right: 0; RTL */
-  visibility: hidden;
+  visibility: hidden; 
   width: var(--slideout-size);
   padding: var(--slideout-padding);
   background: var(--slideout-background);
