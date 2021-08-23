@@ -15,4 +15,27 @@ toc: true
 
 Click tabs to swap between content that is broken into logical sections.
 
-{{< pattern src="/tabs/tabs.html" >}}
+<div class="preview">
+  <link rel="stylesheet" href="/cssui.css">
+  <link rel="stylesheet" href="/tabs/tabs.css">
+
+  <div data-tabs>
+    <input checked="checked" id="tab1" type="radio" name="tab" data-tab="tab1" />
+    <input id="tab2" type="radio" name="tab" data-tab="tab2" />
+    <input id="tab3" type="radio" name="tab" data-tab="tab3" />
+    <nav>
+      <label for="tab1" data-tab-label="tab1" role="tab">First Tab</label>
+      <label for="tab2" data-tab-label="tab2" role="tab">Second Tab</label>
+      <label for="tab3" data-tab-label="tab3" role="tab">Third Tab</label>
+    </nav>
+    <section data-tab-panel="tab1" role="tabpanel" aria-labelledby="tab1">
+      First Tab Panel
+    </section>
+      <section data-tab-panel="tab2" role="tabpanel" aria-labelledby="tab1">
+      Second Tab Panel
+    </section>
+    <section data-tab-panel="tab3" role="tabpanel" aria-labelledby="tab1">
+      Third Tab Panel
+    </section>
+  </div>
+</div>
