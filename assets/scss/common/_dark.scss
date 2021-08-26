@@ -381,3 +381,24 @@ body.dark .copy-status:active::after {
 body.dark.home .section-bg {
   background: url(images/page-bg-dark.jpg) 0 0 no-repeat;
 }
+
+body.dark .hljs {
+  background: $body-overlay-dark;
+  color: $body-color-dark;
+}
+
+body.dark .hljs-string,
+body.dark .hljs-variable,
+body.dark .hljs-template-variable,
+body.dark .hljs-symbol,
+body.dark .hljs-bullet,
+body.dark .hljs-section,
+body.dark .hljs-addition,
+body.dark .hljs-attribute,
+body.dark .hljs-link {
+  color: $blue-300;
+}
+
+body.home.dark .hljs {
+  background: #121820;
+}

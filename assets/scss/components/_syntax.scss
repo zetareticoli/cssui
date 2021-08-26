@@ -44,19 +44,15 @@ Based on Ascetic by (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
   font-style: italic;
 }
 
-body.dark .hljs {
-  background: $body-overlay-dark;
-  color: $body-color-dark;
+.home .hljs {
+  padding-left: 2.5rem;
 }
 
-body.dark .hljs-string,
-body.dark .hljs-variable,
-body.dark .hljs-template-variable,
-body.dark .hljs-symbol,
-body.dark .hljs-bullet,
-body.dark .hljs-section,
-body.dark .hljs-addition,
-body.dark .hljs-attribute,
-body.dark .hljs-link {
-  color: $blue-300;
+.home .hljs::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  content: '~';
+  color: green;
 }
