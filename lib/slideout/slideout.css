@@ -1,12 +1,13 @@
 /* ------------------------------
 Changing the sliding in animation
-/* LTR - From -100% to 0
-/* RTL - From -panelsize to 0
 ------------------------------ */
 
+/* NOTES: 
+/* Edit the '--slideout-animation' and '--slideout-position' variables to change the position */
+
 [data-slideout-panel] {
-  --slideout-animation: left .2s ease;
-  --slideout-background: #e5e7eb;
+  --slideout-animation: left .2s ease-in-out;
+  --slideout-background: #fff;
   --slideout-shadow-color: #9ca3af;
   --slideout-padding: 1rem;
   --slideout-position: -100%;
@@ -14,14 +15,14 @@ Changing the sliding in animation
   position: fixed;
   top: 0;
   bottom: 0;
-  left: var(--slideout-position); /* LTR */
+  left: var(--slideout-position); 
   z-index: 9999;
-  /* right: 0; RTL */
+  /* right: 0;  */
   visibility: hidden; 
   width: var(--slideout-size);
   padding: var(--slideout-padding);
   background: var(--slideout-background);
-  box-shadow: 0 2px 6px var(--slideout-shadow-color);
+  box-shadow: 0 4px 20px var(--slideout-shadow-color);
   transition: var(--slideout-animation);
 }
 
@@ -37,5 +38,5 @@ Changing the sliding in animation
 }
 
 [data-slideout-close] {
-  color: black;
+  color: var(--cssui-gray-darkest);
 }
