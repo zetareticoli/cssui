@@ -20,8 +20,8 @@ toc: true
 <link rel="stylesheet" href="/cssui.css">
 <link rel="stylesheet" href="/tooltip/tooltip.css">
 
-<a href="#" data-tooltip alt="Alt text" title="This is a link" aria-label="Link" role="link">Hover me</a>
+<a href="#" data-tooltip alt="Alt text" title="This is a link" role="tooltip" aria-label="Tooltip message">Hover me</a>
 </div>
 {{< highlight html >}}
-<a href="#" data-tooltip alt="Alt text" title="This is a link" aria-label="Link" role="link">Hover me</a>
+<a href="#" data-tooltip alt="Alt text" title="This is a link" role="tooltip" aria-label="Tooltip message">Hover me</a>
 {{< /highlight >}}
