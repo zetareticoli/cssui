@@ -69,6 +69,6 @@ editPage = false
   darkMode = true
   bootStrapJs = true
   breadCrumb = false
-  highLight = true
+  highLight = false
   kaTex = false
   collapsibleSidebar = false
