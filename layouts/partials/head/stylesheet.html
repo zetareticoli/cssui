@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/css/prism.css">
+
 {{ if eq (hugo.Environment) "development" -}}
   {{ $options := (dict "targetPath" "main.css" "enableSourceMap" true "includePaths" (slice "node_modules")) -}}
   {{ $css := resources.Get "scss/app.scss" | toCSS $options -}}
@@ -9,4 +11,3 @@
   <link rel="stylesheet" href="{{ $secureCSS.Permalink }}" integrity="{{ $secureCSS.Data.Integrity }}" crossorigin="anonymous">
 {{ end -}}
 <noscript><style>img.lazyload { display: none; }</style></noscript>
-<link rel="stylesheet" href="/css/prism.css">
