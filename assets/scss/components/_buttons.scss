@@ -60,6 +60,11 @@ pre {
   }
 }
 
+.btn-primary,
+.btn-primary:hover {
+  color: #fff;
+}
+
 .btn-copy {
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
