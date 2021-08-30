@@ -38,19 +38,17 @@ Dropdowns are toggleable, contextual overlays for displaying lists of links and 
 Dropdown is built using `<details>` HTML5 tag, which creates a disclosure widget where information is visible only into an "open" state. [More info here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details?retiredLocale=it)
 
 ```html
+<details data-dropdown>
+  <summary>
+    Select an option...
+  </summary>
+  <ul role="menu">
+    <li><a href="#">Dropdown item</a></li>
+    <li><a href="#">Dropdown item</a></li>
+    <li><a href="#">Dropdown item</a></li>
+  </ul>
 
-  <details data-dropdown>
-    <summary>
-      Select an option...
-    </summary>
-    <ul role="menu">
-      <li><a href="#">Dropdown item</a></li>
-      <li><a href="#">Dropdown item</a></li>
-      <li><a href="#">Dropdown item</a></li>
-    </ul>
-  
-  </details>
-
+</details>
 ```
 
 ## Variables

@@ -39,8 +39,7 @@ You must use a link element to toggle the Slideout component just like `<a href=
 
 The Slideout panel should have the `data-slideout-panel` attribute. Apart from `data-slideout-header`, you can put any content inside the panel.
 
-{{< highlight html >}}
-
+```html
 <a href="#slideout">Open Slideout</a>
 
 <div id="slideout" data-slideout-panel>
@@ -53,7 +52,7 @@ The Slideout panel should have the `data-slideout-panel` attribute. Apart from `
   <p>Content for the slideout goes here. You can place just about any component or custom elements here.
 </p>
 </div>
-{{< /highlight >}}
+```
 
 ## Live Demo
 

@@ -34,7 +34,7 @@ Click on the button below to toggle the modal dialog.
 
 The modal dialog is wrapped in a unique container with both `id` and `data-modal` attributes specified.
 
-{{< highlight html >}}
+```html
 <div id="modal" data-modal>
   <!-- Modal  -->
   <div data-modal-dialog>
@@ -44,7 +44,7 @@ The modal dialog is wrapped in a unique container with both `id` and `data-modal
   <!-- Background, click to close -->
   <a href="#" data-modal-overlay></a>
 </div>
-{{< /highlight >}}
+```
 
 ### Set ID
 
