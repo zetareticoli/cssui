@@ -11,14 +11,14 @@
   url = "/docs/help/"
 
 [[main]]
-  name = "Docs"
+  name = "Documentation"
   url = "/docs/getting-started/introduction/"
   weight = 10
 
-[[main]]
-  name = "Blog"
-  url = "/blog/"
-  weight = 20
+# [[main]]
+#   name = "Blog"
+#   url = "/blog/"
+#   weight = 20
 
 [[social]]
   name = "Twitter"
