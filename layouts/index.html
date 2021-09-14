@@ -7,53 +7,70 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/getting-started/introduction/" | relURL }}" role="button">Browse Components</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/doks/master/package.json" }}{{ $data.version }}</a></p>
     </div>
   </div>
 
   <div class="row justify-content-center">
-    <div class="col-lg-8">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="terminal language-bash" data-lang="bash">npm install css-ui-lib</code></pre></div>
+    <div class="col-lg-9 d-flex">
+      <div class="w-75 highlight mr-1">
+        <pre tabindex="0" class="m-0"><code class="terminal language-bash" data-lang="bash">npm i css-ui-lib</code></pre>
+      </div>
+      <a class="w-25 btn btn-primary btn-lg px-4 mb-2" href="">Download</a>
+    </div>
+    <div class="col-lg-9 text-center ">
+      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/zetareticoli/cssui">⭐️ Star on Github</a></p>
     </div>
   </div>
+
+  <!-- <div class="row">
+    <div class="col-lg-12">
+      <h2>Why CSSUI?</h2>
+      <p class="lead">
+        Only the backbone. No custom classes, no frameworks. Only pure CSS and HTML. Default styles rely on `data-attributes`
+      </p>
+    </div>
+  </div> -->
+
 </section>
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
 <section class="section section-sm">
   <div class="container">
-    <div class="row justify-content-center text-center">
+    <div class="row justify-content-center">
       <div class="col-lg-5">
         <h2 class="h4">Pure CSS Components</h2>
-        <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+        <p>No JavaScript components to load so there is no wait time for modal, accordion, tabs or any other components. </p>
+        <p><a href="">Browse Components &rarr;</a></p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Easy to Customize ⚡️</h2>
-        <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+        <h2 class="h4">Easy to Customize</h2>
+        <p>Adding your style is easy. Customize components overriding the default CSS variables or using classes.</p>
       </div>
       <div class="col-lg-5">
         <h2 class="h4">Standard HTML</h2>
-        <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+        <p>Each component is built taking advantage of modern, standard HTML elements.</p>
       </div>
     </div>
-    <div class="row justify-content-center text-center">
+    <div class="row justify-content-center">
       <div class="col-lg-5">
-        <h2 class="h4">No JS Required</h2>
-        <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+        <h2 class="h4">Easy for Pro and Beginners</h2>
+        <p class="text-left">From a quick prototype to a production website, CSSUI is perfect for beginners as well as skilled developers.</p>
       </div>
       <div class="col-lg-5">
         <h2 class="h4">Tiny in Production</h2>
-        <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
+        <p>⚡️ Super light and fast in production. Only 9kb zipped. </p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">All browsers supported</h2>
-        <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+        <h2 class="h4">All Browsers Supported</h2>
+        <p>CSSUI works fine on all modern browsers: Edge 79+, Firefox 49+, Chrome 12+ and Safari 10+. Old browsers aren't supported.</p>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
+
+
 
 {{ define "sidebar-footer" }}
 <section class="section section-sm container-fluid">

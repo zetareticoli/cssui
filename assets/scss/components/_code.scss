@@ -63,3 +63,18 @@ pre code::-webkit-scrollbar-thumb:hover {
 code.language-mermaid {
   background: none;
 }
+
+.preview {
+  background-color: #fff;
+  border: 1px solid var(--cssui-gray-lighter);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.preview + .highlight pre {
+  margin-top: 0;
+}
+
+.home pre {
+  padding: .6rem 1rem;
+}
