@@ -4,21 +4,21 @@
   identifier = "getting-started"
   url = "/docs/getting-started/"
 
-[[docs]]
-  name = "Help"
-  weight = 60
-  identifier = "help"
-  url = "/docs/help/"
+# [[docs]]
+#   name = "Help"
+#   weight = 60
+#   identifier = "help"
+#   url = "/docs/help/"
 
 [[main]]
   name = "Documentation"
   url = "/docs/getting-started/introduction/"
   weight = 10
 
-# [[main]]
-#   name = "Blog"
-#   url = "/blog/"
-#   weight = 20
+[[main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 20
 
 # [[social]]
 #   name = "Twitter"
