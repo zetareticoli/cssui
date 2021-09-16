@@ -31,16 +31,16 @@
 
 [data-dropdown] summary::after {
   position: absolute;
-  top: calc(var(--dropdown-padding) + .3em);
+  top: calc(var(--dropdown-padding) * 1.75);
   right: var(--dropdown-padding);
   content: "";
   display: inline-block;
-  margin-left: .255em;
-  border-top: .3em solid;
-  border-right: .3em solid transparent;
+  margin-left: .255rem;
+  border-top: .3rem solid;
+  border-right: .3rem solid transparent;
   border-bottom: 0;
-  border-left: .3em solid transparent;
-  vertical-align: .255em;
+  border-left: .3rem solid transparent;
+  vertical-align: .255rem;
 }
 
 [data-dropdown][open] summary::after {
