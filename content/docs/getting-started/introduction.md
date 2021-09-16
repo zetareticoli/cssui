@@ -13,31 +13,130 @@ weight: 100
 toc: true
 ---
 
-## Get started
+## Installation
 
-There are two main ways to get started with Doks:
+Use [npm](https://www.npmjs.com/package/css-ui-test) to install CSSUI in your project:
 
-### Tutorial
+```bash
+npm i css-ui-lib
+```
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
+Or <a href="">Download it here</a>.
 
-Step-by-step instructions on how to start a new Doks project. 
+## Usage
 
-### Quick Start
+The library includes a global stylesheet and components list divide by folder.
 
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
+Each component folder includes two files:
 
-One page summary of how to start a new Doks project. 
+1. a HTML template file
+2. a CSS stylesheet.
 
+You can use template files as partial or copy/paste the code into the project's files according to your needs.
 
-### Showcase
+### Stylesheets Cascade
 
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
+```html
 
-## Contributing
+<!-- CSSUI Global Stylesheet -->
+<link rel="stylesheet" href="/vendor/cssui.css">
 
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
+<!-- CSSUI Components -->
+<link rel="stylesheet" href="/vendor/cssui/accordion.css">
+<link rel="stylesheet" href="/vendor/cssui/tabs.css">
 
-## Help
+<!-- Project Files -->
+<link rel="stylesheet" href="your-variables.css">
+<link rel="stylesheet" href="your-style.css">
+```
+### Files Included
+<table> 
+	<thead> 
+		<tr> 
+			<th>File Name</th> 
+			<th>Notes</th> 
+			<th class="text-center no-wrap">Size</th>
+			<th class="text-center no-wrap">Required</th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+    <tr> 
+    	<td class="fs-6"><code><span>cssui.css</span></code></td> 
+    	<td class="fs-6">
+    		This file has the CSS variables used by all components.
+    	</td>
+    	<td class="text-center fs-6">14kb</td> 
+    	<td class="text-center fs-6 text-success no-wrap">✔ Required</td>
+    </tr>
+    <tr> 
+    	<td class="fs-6">
+        <code><span>accordion/accordion.html</span></code>
+        <code><span>accordion/accordion.css</span></code>
+      </td> 
+    	<td class="fs-6">
+    		Accordion component.
+    	</td>
+    	<td class="text-center fs-6">14kb</td> 
+    	<td class="text-center fs-6 no-wrap">Optional</td>
+    </tr>
+        <tr> 
+    	<td>
+        <code><span>dropdown/dropdown.html</span></code>
+        <code><span>dropdown/dropdown.css</span></code>
+      </td> 
+    	<td class="fs-6">
+    		Dropdown component.
+    	</td>
+    	<td class="text-center fs-6">14kb</td> 
+    	<td class="text-center fs-6 no-wrap">Optional</td>
+    </tr>
+    <tr> 
+    	<td class="fs-6">
+        <code><span>modal/modal.html</span></code>
+        <code><span>modal/modal.css</span></code>
+      </td> 
+    	<td class="fs-6">
+    		Modal component
+    	</td>
+    	<td class="text-center fs-6">14kb</td> 
+    	<td class="text-center fs-6 no-wrap">Optional</td>
+    </tr>
+    <tr> 
+    	<td class="fs-6">
+        <code><span>slideout/slideout.html</span></code>
+        <code><span>slideout/slideout.css</span></code>
+      </td> 
+    	<td class="fs-6">
+    		Slideout component
+    	</td>
+    	<td class="text-center fs-6">14kb</td> 
+    	<td class="text-center fs-6 no-wrap">Optional</td>
+    </tr>
+    <tr> 
+    	<td class="fs-6">
+        <code><span>tabs/tabs.html</span></code>
+        <code><span>tabs/tabs.css</span></code>
+      </td> 
+    	<td class="fs-6">
+    		Tabs component
+    	</td>
+    	<td class="text-center fs-6">14kb</td> 
+    	<td class="text-center fs-6 no-wrap">Optional</td>
+    </tr>
+    <tr> 
+    	<td class="fs-6">
+        <code><span>tooltip/tooltip.html</span></code>
+        <code><span>tooltip/tooltip.css</span></code>
+      </td> 
+    	<td class="fs-6">
+    		Tooltip component
+    	</td>
+    	<td class="text-center fs-6">14kb</td> 
+    	<td class="text-center fs-6 text-success no-wrap">Optional</td>
+    </tr>
+  </tbody> 
+</table>
 
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+## Support
+
+[Open an issue ](https://github.com/zetareticoli/cssui/issues) here on Github to share feedback, report bug or ask help.
