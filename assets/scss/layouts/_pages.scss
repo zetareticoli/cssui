@@ -46,5 +46,7 @@ p.meta {
 
 .preview {
   padding: 2vw;
-  border: 1px solid white;
+  border: 1px solid var(--cssui-gray-lighter);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
