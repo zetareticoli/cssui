@@ -15,12 +15,12 @@ toc: true
 
 ## Overview
 
-CSSUI fornisce un file CSS con tutte le variabili globali utilizzate dai componenti inclusi nella libreria.
-È facile riconoscere queste variabili perché hanno tutte il prefix `--cssui-`. 
+CSSUI provides a CSS file with all the global variables used by the components included in the library.
+It is easy to recognize these variables because they start with the prefix `--cssui-`.
 
-Per personalizzare il layout dei componenti è quindi sufficiente sovrascrivere i valori associati a queste variabili nel proprio file CSS dedicato.
+To customize component's layout you can to overwrite those usign your own dedicated CSS file.
 
-Ad esempio il colore `gray-darkest` presente nella libreria
+For example the `gray-darkest` color in CSSUI is:
 
 ```css
 /* cssui.css */
@@ -29,7 +29,7 @@ Ad esempio il colore `gray-darkest` presente nella libreria
 
 ```
 
-Può essere modificato utilizzando un nuovo valore:
+It could be customized using a HEX value as follow:
 
 ```css
 /* your-stylesheet.css */
@@ -38,7 +38,7 @@ Può essere modificato utilizzando un nuovo valore:
 
 ```
 
-Oppure utilizzando una variabile personalizzata:
+Or using your custom variable:
 
 ```css
 /* your-stylesheet.css */
@@ -48,28 +48,27 @@ Oppure utilizzando una variabile personalizzata:
 
 ## Cascade
 
-CSSUI si basa sulle CSS Custom Properties pertanto è importante rispettare il giusto ordine nella cascata CSS per poter sovrascrivere correttamente gli stili.
-Qualunque sia la struttura del tuo progetto, l'override degli stili di CSSUI deve venire **dopo** di essi in ordine di caricamento.
-
+CSSUI is makes use of CSS Custom Properties. So, it's really important to mind the CSS cascade in order to correctly override the styles.
+Whatever the structure of your project, the override files must be placed ** after ** the `cssui.css` file in load order.
 
 ## Components
 
-Ogni componente di CSSUI ha le sue variabili locali. Alcune di esse puntano alle variabili globali. Altre invece hanno un proprio valore diretto.
-In questo modo è possibile personalizzare il layout di uno specifico componente senza modificare per forza tutti gli altri.
+Each CSSUI component has its own local variables. Some of them point to global variables. Others have their own direct value.
+In this way it's possible to customize the layout of a specific component without necessarily changing the default.
 
-Una variabile con valore diretto:
+Look at a varialbe for Modal component, using a `rgb` value:
 
 ```css
   --modal-background: rgb(255, 255, 255);
 ```
 
-Una variabile local che punta ad una globale:
+This is a variable for Dropdown component, using a variable from CSSUI:
 
 ```css
   --drodpwon-link-color: var(--cssui-gray-darkest);
 ```
 
-Puoi modificare direttamente queste variabili nel modo che preferisci:
+You can customize these variables as you prefer:
 
 ```css
   /* Direct value*/
@@ -83,13 +82,8 @@ Puoi modificare direttamente queste variabili nel modo che preferisci:
   --dropdown-link-color: var(--your-css-variable);
 ```
 
-
 ## Tailwind
  
-CSSUI è stato progettato anche per essere facilmente integrabile con le variabili di Tailwind.
+CSSUI has been designed to easily integrate with other frameworks like Tailwind.
 
-È infatti sufficiente sovrascrivere le variabili globali o locali di CSSUI con quelle del framework
-
-```css
-  --dropdown-link-color: var(--your-css-variable);
-```
+_More details coming soon!_
