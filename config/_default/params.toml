@@ -3,18 +3,18 @@
 ## Homepage
 title = "CSSUI"
 titleSeparator = "-"
-titleAddition = "Interactive Components Library in Pure CSS"
+titleAddition = "Pure CSS interactive components"
 description = "CSSUI is a library of interactive components realized in pure CSS"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["logo-cssui.png"]
 ogLocale = "en_US"
 domainTLD = "cssui.dev"
 titleHome = "CSSUI"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@cssui"
+twitterCreator = "@zetareticoli"
 
 ## JSON-LD
 # schemaType = "Person"
@@ -22,13 +22,13 @@ schemaType = "Organization"
 schemaName = "CSSUI"
 schemaAuthor = "Francesco Improta"
 schemaAuthorTwitter = "https://twitter.com/zetareticoli"
-# schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/francescoimprota/"
 schemaAuthorGitHub = "https://github.com/zetareticoli"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = "logo-cssui.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = "logo-cssui.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/cssui"
@@ -50,12 +50,12 @@ portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a> + <a href=\"https://gohugo.io/\">Hugo</a>"
 copyRight = "Copyright (c) 2021-2021 Francesco Improta"
 
 # Alert
 alert = false
-alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
+alertText = "Like CSSUI? <a class=\"alert-link\" href=\"https://github.com/zetareticoli/cssui/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
 # Edit Page
 docsRepo = "https://github.com/zetareticoli/cssui"
@@ -65,8 +65,8 @@ editPage = false
   lazySizes = true
   clipBoard = true
   instantPage = true
-  flexSearch = true
-  darkMode = true
+  flexSearch = false
+  darkMode = false
   bootStrapJs = true
   breadCrumb = false
   highLight = false
