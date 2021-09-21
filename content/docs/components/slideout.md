@@ -16,7 +16,7 @@ toc: true
 Click on the button below to toggle the modal dialog.
 
 <link rel="stylesheet" href="/cssui.css">
-<link rel="stylesheet" href="/modal/modal.css">
+<link rel="stylesheet" href="/slideout/slideout.css">
 
 <div class="preview" style="text-align: center">
 <a href="#slideout" class="btn btn-primary btn-lg px-4 mb-2">Open Slideout</a>
