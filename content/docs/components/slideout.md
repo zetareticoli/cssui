@@ -53,3 +53,17 @@ The Slideout panel should have the `data-slideout-panel` attribute. Apart from `
 </p>
 </div>
 ```
+## Variables
+
+List of variables used. Customize the component's design by changing or overriding these values:
+
+```css
+  --slideout-animation: left .2s ease-in-out;
+  --slideout-background: #fff;
+  --slideout-shadow-color: #9ca3af;
+  --slideout-padding: 1rem;
+  --slideout-position: -100%;
+  --slideout-size: 33vw;
+```
+
+Some variables are commented. Remove the comment if you want to change the style of tabs.

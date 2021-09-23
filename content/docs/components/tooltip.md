@@ -25,3 +25,16 @@ toc: true
 {{< highlight html >}}
 <a href="#" data-tooltip alt="Alt text" title="This is a link" role="tooltip" aria-label="Tooltip message">Hover me</a>
 {{< /highlight >}}
+
+## Variables
+
+List of variables used. Customize the component's design by changing or overriding these values:
+
+```css
+  --tooltip-background: var(--cssui-gray-darkest);
+  --tooltip-padding: 4px 6px;
+  --tooltip-text-color: var(--cssui-gray-light);
+  --tooltip-fontsize: .75rem;
+  /* --tooltip-radius: 0px */
+
+```

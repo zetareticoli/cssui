@@ -56,3 +56,18 @@ Example:
 <div id="modal-1" data-modal></div>
 ```
 
+## Variables
+
+List of variables used. Customize the component's design by changing or overriding these values:
+
+```css
+  --modal-background: rgb(255, 255, 255);
+  --modal-level: 9999;
+  --modal-max-size: 500px;
+  --modal-overlay-background: rgba(0, 0, 0, .2);
+  --modal-radius: 8px;
+  --modal-size: 80%;
+  --modal-spacing: 1rem;
+```
+
+Some variables are commented. Remove the comment if you want to change the style of tabs.

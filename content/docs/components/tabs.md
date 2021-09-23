@@ -39,3 +39,18 @@ Click tabs to swap between content that is broken into logical sections.
     </section>
   </div>
 </div>
+
+## Variables
+
+List of variables used. Customize the component's design by changing or overriding these values:
+
+```css
+  --tab-border-color: #F3F4F6;
+  --tab-panel-background: #fff;
+  --tab-border-bottom-color: #9CA3AF;
+  --tab-border-bottom-width: 2px;
+  --tab-spacing: 1rem .5rem;
+```
+
+Some variables are commented. Remove the comment if you want to change the style of tabs.
+
