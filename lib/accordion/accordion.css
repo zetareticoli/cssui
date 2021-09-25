@@ -55,6 +55,10 @@
   transition: padding var(--cssui-animation-timing) ease;
 }
 
+[data-accordion-panel-content] {
+  display: none;
+}
+
 [data-accordion-item] > input:checked + label > svg {
   transform: rotate(-180deg);
 }
@@ -64,3 +68,6 @@
   padding: var(--accordion-panel-padding);
 }
 
+[data-accordion-item] > input:checked ~ [data-accordion-panel] > [data-accordion-panel-content] {
+  display: block;
+}
