@@ -15,7 +15,7 @@ toc: true
 
 ## Installation
 
-Use [npm](https://www.npmjs.com/package/css-ui-test) to install CSSUI in your project:
+Use [npm](https://www.npmjs.com/package/css-ui-lib) to install CSSUI in your project:
 
 ```bash
 npm i css-ui-lib

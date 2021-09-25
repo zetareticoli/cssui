@@ -4,7 +4,7 @@ CSSUI is a library of interactive components realized in pure HTML and CSS. It i
 
 ## Installation
 
-Use [npm](https://www.npmjs.com/package/css-ui-test) to install CSSUI in your project:
+Use [npm](https://www.npmjs.com/package/css-ui-lib) to install CSSUI in your project:
 
 ```bash
 npm install css-ui-lib
