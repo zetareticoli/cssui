@@ -2,6 +2,8 @@
 
 CSSUI is a library of interactive components realized in pure HTML and CSS. It includes frequently used components as Accordion, Modal, Tabs and more.
 
+Demo and documentation available [here](https://www.cssui.dev/).
+
 ## Installation
 
 Use [npm](https://www.npmjs.com/package/css-ui-lib) to install CSSUI in your project:
