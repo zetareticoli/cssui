@@ -1,3 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/72e8ba7d-b54f-4a7c-a6fa-6028134a7520/deploy-status)](https://app.netlify.com/sites/css-ui/deploys)
+![npm Version](https://img.shields.io/npm/v/css-ui-lib?style=flat-square)
+![npm Downloads](https://img.shields.io/npm/dt/css-ui-lib?logo=npm&style=flat-square)
+
+
 # CSSUI
 
 CSSUI is a library of interactive components realized in pure HTML and CSS. It includes frequently used components as Accordion, Modal, Tabs and more.
