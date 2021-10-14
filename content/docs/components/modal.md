@@ -57,9 +57,7 @@ The modal dialog is wrapped in a unique container with both `id` and `data-modal
 ```
 ### Unique ID
 
-Set a unique `id` for each modal you want to use in a page.
-
-Example:
+Each modal should have a unique `id` as follows:
 
 ```html
 <div id="modal-one" data-modal>
@@ -79,11 +77,15 @@ As you can see, once the modal is opened, when we keep pressing tab, **each elem
 This is the default behaviour for every modal.
 
 > If you need to fix this, you need to **add some javascript code** so the focus will remain in the modal
+>
+> <small> Try <a href="https://www.npmjs.com/package/focus-trap-js" target="_blank">focus-trap-js</a>. Vanilla JS with size < 0.5kb. No dependencies. </small>
+
+
 
 ### Page Scroll
 As far CSSUI is a Pure CSS library, the modal component **doesn't provide any page scroll lock** feature. You need a dedicate Javascript script for it. 
 
-Give <a href="https://www.npmjs.com/package/body-scroll-lock" target="_blank">body-scroll-lock</a> a try.
+Try <a href="https://www.npmjs.com/package/body-scroll-lock" target="_blank">body-scroll-lock</a> to enable it.
 ## Variables
 
 List of variables used. Customize the component's design by changing or overriding these values:
