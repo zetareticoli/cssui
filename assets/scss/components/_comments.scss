@@ -24,7 +24,10 @@
 
 blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
-  border-left: 3px solid $gray-300;
-  padding-left: 1rem;
+  border-left: 3px solid $primary;
+  border-top: 1px solid $gray-300;
+  border-bottom: 1px solid $gray-300;
+  border-right: 1px solid $gray-300;
+  border-radius: 4px;
+  padding: 1rem 1rem 0;
 }
