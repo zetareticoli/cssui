@@ -54,3 +54,10 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+[data-modal-close] {
+  position: absolute;
+  top: var(--modal-spacing);
+  right: var(--modal-spacing);
+  color: var(--cssui-gray-darkest);
+}

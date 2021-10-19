@@ -10306,9 +10306,12 @@ code.language-mermaid {
 
 blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
-  border-left: 3px solid #dee2e6;
-  padding-left: 1rem; }
+  border-left: 3px solid #14b8a6;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1rem 1rem 0; }
 
 /** Search form */
 .search-form label {
