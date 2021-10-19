@@ -77,7 +77,6 @@ The Accordion component consists of a parent container with the `data-accordion`
 ```
 
 Each item is composed by a title and content part:
-:
 
 ```html
 <div data-accordion-item>
@@ -86,12 +85,19 @@ Each item is composed by a title and content part:
     Item Title
   </label>
   <div data-accordion-panel>
-
-    <!-- Panel Content here -->
-  
+    <div data-accordion-panel-content>
+        <!-- Panel Content here -->
+    </div>
   </div>
 </div>
 ```
+
+### Panel content and accessibility
+
+You may have noticed the panel content is nested in two `<div>` elements: `[data-accordion-panel]` and
+`[data-accordion-panel-content]`. This allows performing expand/collapse animations while removing the element from the
+accessibility tree.
+
 
 ## Variables
 
