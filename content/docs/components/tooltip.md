@@ -1,7 +1,7 @@
 ---
 title: "Tooltip"
-description: "A single content area with multiple panels, each associated with a header in a list."
-lead: "A single content area with multiple panels, each associated with a header in a list."
+description: "Display informative text hovering and focusing on an element"
+lead: "Display informative text hovering and focusing on an element"
 date: 2021-07-14T13:26:54+01:00
 lastmod: 2021-07-14T13:26:54+01:00
 draft: false
@@ -13,18 +13,22 @@ weight: 610
 toc: true
 ---
 
-## Live Demo
+Hover or focus over the links below to see tooltips:
 
-
-<div class="preview">
+<div class="preview text-center">
 <link rel="stylesheet" href="/cssui.css">
 <link rel="stylesheet" href="/tooltip/tooltip.css">
 
 <a href="#" data-tooltip alt="Alt text" title="This is a link" role="tooltip" aria-label="Tooltip message">Hover me</a>
 </div>
-{{< highlight html >}}
+
+## Usage
+
+When activated, tooltips display a text label identifying an element, such as a description of its function.
+
+```html
 <a href="#" data-tooltip alt="Alt text" title="This is a link" role="tooltip" aria-label="Tooltip message">Hover me</a>
-{{< /highlight >}}
+```
 
 ## Variables
 
