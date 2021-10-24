@@ -11,7 +11,10 @@
 }
 
 [data-tab] {
-  display: none;
+  /* Hide the element from UI, but still available for focus. */
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
 }
 
 [data-tab-panel] {
@@ -55,6 +58,22 @@ nav {
   z-index: 10;
   border-bottom-color: #1D4ED8;
   box-shadow: var(--tab-active-shadow, 0);
+}
+
+/* Tab Label Focus State */
+[data-tab="tab1"]:focus ~ nav [data-tab-label="tab1"],
+[data-tab="tab2"]:focus ~ nav [data-tab-label="tab2"],
+[data-tab="tab3"]:focus ~ nav [data-tab-label="tab3"] {
+  outline: 2px auto #101010;
+  outline: 2px auto Highlight;
+  outline: 2px auto -webkit-focus-ring-color;
+}
+
+/* Hide focus ring if focus comes from a pointer device. */
+[data-tab="tab1"]:focus:not(:focus-visible) ~ nav [data-tab-label="tab1"],
+[data-tab="tab2"]:focus:not(:focus-visible) ~ nav [data-tab-label="tab2"],
+[data-tab="tab3"]:focus:not(:focus-visible) ~ nav [data-tab-label="tab3"]{
+    outline: none;
 }
 
 /* Tab Panel Active State */

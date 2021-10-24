@@ -9670,6 +9670,9 @@ body {
 .katex {
   font-size: 1.125rem; }
 
+.lead {
+  color: #6c757d; }
+
 /** Theme variables */
 /** Theme styles */
 body.dark {
