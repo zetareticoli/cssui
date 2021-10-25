@@ -59,10 +59,10 @@ Tabs only require the following structure:
     <section data-tab-panel="tab1" role="tabpanel" aria-labelledby="tab1">
       First Tab Panel
     </section>
-      <section data-tab-panel="tab2" role="tabpanel" aria-labelledby="tab1">
+      <section data-tab-panel="tab2" role="tabpanel" aria-labelledby="tab2">
       Second Tab Panel
     </section>
-    <section data-tab-panel="tab3" role="tabpanel" aria-labelledby="tab1">
+    <section data-tab-panel="tab3" role="tabpanel" aria-labelledby="tab3">
       Third Tab Panel
     </section>
   </div>
