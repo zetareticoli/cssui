@@ -53,10 +53,7 @@
   background: var(--accordion-panel-background);
   color: var(--accordion-panel-text-color);
   transition: padding var(--cssui-animation-timing) ease;
-}
-
-[data-accordion-panel-content] {
-  display: none;
+  visibility: hidden;
 }
 
 [data-accordion-item] > input:checked + label > svg {
@@ -66,8 +63,5 @@
 [data-accordion-item] > input:checked ~ [data-accordion-panel] {
   max-height: 100vh;
   padding: var(--accordion-panel-padding);
-}
-
-[data-accordion-item] > input:checked ~ [data-accordion-panel] > [data-accordion-panel-content] {
-  display: block;
+  visibility: visible;
 }
