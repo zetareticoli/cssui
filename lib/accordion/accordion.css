@@ -43,6 +43,22 @@
   --accordion-title-background: var(--cssui-gray-lighter);
 }
 
+[data-accordion-item] > input:checked + label:hover  {
+  --accordion-title-background: var(--cssui-gray-light);
+}
+
+/* Accordion Item's Label Focus State */
+[data-accordion-item] > input:focus + label  {
+  outline: 2px auto #101010;
+  outline: 2px auto Highlight;
+  outline: 2px auto -webkit-focus-ring-color;
+}
+
+/* Hide focus ring if focus comes from a pointer device. */
+[data-accordion-item] > input:focus:not(:focus-visible) + label  {
+  outline: none;
+}
+
 [data-accordion-item] > label > svg {
   transition: all var(--cssui-animation-timing) ease-out;
 }
