@@ -92,13 +92,6 @@ Each item is composed by a title and content part:
 </div>
 ```
 
-### Panel content and accessibility
-
-You may have noticed the panel content is nested in two `<div>` elements: `[data-accordion-panel]` and
-`[data-accordion-panel-content]`. This allows performing expand/collapse animations while removing the element from the
-accessibility tree.
-
-
 ## Variables
 
 List of variables used. Customize the component's design by changing or overriding these values:
