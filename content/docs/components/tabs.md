@@ -67,6 +67,8 @@ Tabs only require the following structure:
     </section>
   </div>
 ```
+## Accessibility
+You can navigate tabs using keyboard by default. Pressing `tab` it will enable the focus state on a tab and the you can move bewteen them with keyboard arrows.
 
 ## Variables
 
