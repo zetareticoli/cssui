@@ -68,7 +68,7 @@ Tabs only require the following structure:
   </div>
 ```
 ## Accessibility
-You can navigate tabs using keyboard by default. Pressing `tab` it will enable the focus state on a tab and the you can move bewteen them with keyboard arrows.
+You can navigate tabs using keyboard by default. Press TAB it will move the focus on the first tab item. By then, you can move between tabs using the keyboard arrows.
 
 ## Variables
 
