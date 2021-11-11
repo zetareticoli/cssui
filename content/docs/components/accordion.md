@@ -85,9 +85,7 @@ Each item is composed by a title and content part:
     Item Title
   </label>
   <div data-accordion-panel>
-    <div data-accordion-panel-content>
-        <!-- Panel Content here -->
-    </div>
+    <!-- Panel Content here -->
   </div>
 </div>
 ```
