@@ -77,7 +77,6 @@ The Accordion component consists of a parent container with the `data-accordion`
 ```
 
 Each item is composed by a title and content part:
-:
 
 ```html
 <div data-accordion-item>
@@ -86,9 +85,7 @@ Each item is composed by a title and content part:
     Item Title
   </label>
   <div data-accordion-panel>
-
     <!-- Panel Content here -->
-  
   </div>
 </div>
 ```

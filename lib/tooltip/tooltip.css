@@ -31,7 +31,9 @@
 }
 
 [data-tooltip]:hover::after,
-[data-tooltip]:hover::before {
+[data-tooltip]:hover::before,
+[data-tooltip]:focus::after,
+[data-tooltip]:focus::before {
   opacity: 1;
 }
 
