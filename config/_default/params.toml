@@ -7,13 +7,13 @@ titleAddition = "Pure CSS interactive components"
 description = "CSSUI is a library of interactive components realized in pure CSS"
 
 ## Open Graph
-images = ["logo-cssui.png"]
+images = ["cssui-cover.png"]
 ogLocale = "en_US"
 domainTLD = "cssui.dev"
 titleHome = "CSSUI"
 
 ## Twitter Cards
-twitterSite = "@cssui"
+twitterSite = "@css_ui"
 twitterCreator = "@zetareticoli"
 
 ## JSON-LD
@@ -31,7 +31,7 @@ schemaLogoHeight = 512
 schemaImage = "cssui-cover.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/cssui"
+schemaTwitter = "https://twitter.com/css_ui"
 schemaLinkedIn = ""
 schemaGitHub = "https://github.com/zetareticoli/cssui"
 schemaSection = "blog"
