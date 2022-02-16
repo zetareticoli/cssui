@@ -59,7 +59,7 @@ List of variables used. Customize the component's design by changing or overridi
   --dropdown-border-radius: var(--cssui-radius);
   --dropdown-border-color: var(--cssui-gray-light);
   --dropdown-link-background: var(--cssui-gray-lighter);
-  --drodpwon-link-color: var(--cssui-gray-darkest);
+  --dropdown-link-color: var(--cssui-gray-darkest);
   --dropdown-panel-background: #fff;
   --dropdown-padding: var(--cssui-padding);
 ```
