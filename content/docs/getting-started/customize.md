@@ -65,15 +65,15 @@ Look at a varialbe for Modal component, using a `rgb` value:
 This is a variable for Dropdown component, using a variable from CSSUI:
 
 ```css
-  --drodpwon-link-color: var(--cssui-gray-darkest);
+  --dropdown-link-color: var(--cssui-gray-darkest);
 ```
 
 You can customize these variables as you prefer:
 
 ```css
   /* Direct value*/
-  --drodpwon-link-color: red;
-  --drodpwon-link-color: #f60;
+  --dropdown-link-color: red;
+  --dropdown-link-color: #f60;
 
   /* Sass variable*/
   --dropdown-link-color: $sass-variable;

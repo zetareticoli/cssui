@@ -2,7 +2,7 @@
   --dropdown-border-radius: var(--cssui-radius);
   --dropdown-border-color: var(--cssui-gray-light);
   --dropdown-link-background: var(--cssui-gray-lighter);
-  --drodpwon-link-color: var(--cssui-gray-darkest);
+  --dropdown-link-color: var(--cssui-gray-darkest);
   --dropdown-panel-background: #fff;
   --dropdown-padding: var(--cssui-padding);
   position: relative;
@@ -22,9 +22,9 @@
 }
 
 [data-dropdown] summary::-webkit-details-marker {
-  display: none; 
+  display: none;
 }
-  
+
 [data-dropdown] summary:focus {
   outline-width: 3px;
 }
@@ -35,12 +35,12 @@
   right: var(--dropdown-padding);
   content: "";
   display: inline-block;
-  margin-left: .255rem;
-  border-top: .3rem solid;
-  border-right: .3rem solid transparent;
+  margin-left: 0.255rem;
+  border-top: 0.3rem solid;
+  border-right: 0.3rem solid transparent;
   border-bottom: 0;
-  border-left: .3rem solid transparent;
-  vertical-align: .255rem;
+  border-left: 0.3rem solid transparent;
+  vertical-align: 0.255rem;
 }
 
 [data-dropdown][open] summary::after {
@@ -70,5 +70,3 @@
 [data-dropdown] li > a:hover {
   background-color: var(--dropdown-link-background);
 }
-
-

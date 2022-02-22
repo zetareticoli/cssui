@@ -1,10 +1,7 @@
-.docs-content > h2[id]::before,
-.docs-content > h3[id]::before,
-.docs-content > h4[id]::before {
-  display: block;
-  height: 6rem;
-  margin-top: -6rem;
-  content: "";
+.docs-content > h2[id],
+.docs-content > h3[id],
+.docs-content > h4[id] {
+  scroll-margin-top: 6rem;
 }
 
 .anchor {
