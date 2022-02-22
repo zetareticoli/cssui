@@ -13,7 +13,6 @@
 
 [data-accordion-item] {
   width: 100%;
-  overflow: hidden;
 }
 
 [data-accordion-item]:not(:last-child) {
@@ -49,9 +48,9 @@
 
 /* Accordion Item's Label Focus State */
 [data-accordion-item] > input:focus + label  {
-  outline: 2px auto #101010;
-  outline: 2px auto Highlight;
-  outline: 2px auto -webkit-focus-ring-color;
+  outline: 2px solid #101010;
+  outline: 2px solid highlight;
+  outline: 2px solid -webkit-focus-ring-color;
 }
 
 /* Hide focus ring if focus comes from a pointer device. */
