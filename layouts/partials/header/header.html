@@ -17,7 +17,7 @@
           <a class="nav-link" href="{{ .URL | relURL }}" target="_blank">{{ .Pre | safeHTML }}<span class="ms-2 visually-hidden">{{ .Name | safeHTML }}</span></a>
         </li>
       {{ end -}}
-      <li class="nav-item"> <a class="nav-link" href="">v{{ $data := getJSON "https://raw.githubusercontent.com/zetareticoli/cssui/master/lib/package.json" }}{{ $data.version }}</a></li>
+      <li class="nav-item"> <a class="nav-link" href="https://github.com/zetareticoli/cssui/releases" alt="Link to Releases" title="View latest release">v{{ $data := getJSON "https://raw.githubusercontent.com/zetareticoli/cssui/master/lib/package.json" }}{{ $data.version }}</a></li>
     </ul>
     <div class="collapse navbar-collapse order-4 order-md-1">
       <ul class="navbar-nav main-nav me-auto order-5 order-md-2">
