@@ -21,7 +21,7 @@ Use [npm](https://www.npmjs.com/package/css-ui-lib) to install CSSUI in your pro
 npm i css-ui-lib
 ```
 
-Or <a href="">Download it here</a>.
+Or <a href="/cssui.zip">Download it here</a>.
 
 ## Usage
 
