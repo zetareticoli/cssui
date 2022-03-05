@@ -4,3 +4,7 @@ node_modules/
 *.sass.map
 *.scss.map
 .DS_Store
+.idea
+bin
+lib/dist
+lib/dev-server

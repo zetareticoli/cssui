@@ -1,0 +1,24 @@
+<body>
+<link rel="stylesheet" href="../cssui.css">
+<link rel="stylesheet" href="tabs.css">
+
+<div data-tabs role="tablist" aria-label="Sample tabs">
+    <input id="tab1" type="radio" name="tab" data-tab="tab1" role="tab" aria-controls="tab-panel1" checked="checked"/>
+    <input id="tab2" type="radio" name="tab" data-tab="tab2" role="tab" aria-controls="tab-panel2"/>
+    <input id="tab3" type="radio" name="tab" data-tab="tab3" role="tab" aria-controls="tab-panel3"/>
+    <nav>
+        <label for="tab1" data-tab-label="tab1">First Tab</label>
+        <label for="tab2" data-tab-label="tab2">Second Tab</label>
+        <label for="tab3" data-tab-label="tab3">Third Tab</label>
+    </nav>
+    <section id="tab-panel1" data-tab-panel="tab1" role="tabpanel" aria-labelledby="tab1">
+        First Tab Panel
+    </section>
+    <section id="tab-panel2" data-tab-panel="tab2" role="tabpanel" aria-labelledby="tab2">
+        Second Tab Panel
+    </section>
+    <section id="tab-panel3" data-tab-panel="tab3" role="tabpanel" aria-labelledby="tab3">
+        Third Tab Panel
+    </section>
+</div>
+</body>
