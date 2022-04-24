@@ -8,10 +8,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 // This is a draft of release notes
 // - Added two different Carousel components
 // - Added Scroll position component
-// - Added SCSS support
-// - Added minified CSS
 // - Added CDN support
 
+# v0.3.0
+## Added
+- Sass/SCSS support
+- Local development server
+- Automatic browser-vendors prefixins
+- Minification
 # v0.2.1
 ## Fixed
 - Accordion item label keyboard focus not visualized on FF and Safari (#37)
