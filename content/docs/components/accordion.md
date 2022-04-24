@@ -16,9 +16,8 @@ toc: true
 Click headers to expand/collapse content that is broken into logical sections.
 
 <div class="preview">
-
-  <link rel="stylesheet" href="/cssui.css">
-  <link rel="stylesheet" href="/accordion/accordion.css">
+  <link rel="stylesheet" href="/cssui/cssui.min.css">
+  <link rel="stylesheet" href="/cssui/cssui.accordion.min.css">
 
   <section data-accordion>
     <div data-accordion-item>
