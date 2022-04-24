@@ -16,8 +16,8 @@ toc: true
 Click tabs to swap between content that is broken into logical sections. Tabs come with a horizontal navigation and a simple, clean style.
 
 <div class="preview">
-  <link rel="stylesheet" href="/cssui.css">
-  <link rel="stylesheet" href="/tabs/tabs.css">
+  <link rel="stylesheet" href="/cssui/cssui.min.css">
+  <link rel="stylesheet" href="/cssui/cssui.tabs.min.css">
 
   <div data-tabs role="tablist" aria-label="Sample tabs">
     <input id="tab1" type="radio" name="tab" data-tab="tab1" role="tab" aria-controls="tab-panel1" checked="checked" />

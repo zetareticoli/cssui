@@ -14,7 +14,7 @@ rssLimit = 10
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
 section = ["HTML", "RSS", "SITEMAP"]
 
-staticDir = ["static", "lib"]
+staticDir = ["static"]
 
 # remove .{ext} from text/netlify
 [mediaTypes."text/netlify"]
@@ -88,9 +88,6 @@ rel  = "sitemap"
     target = "assets"
   [[module.mounts]]
     source = "static"
-    target = "static"
-  [[module.mounts]]
-    source = "lib"
     target = "static"
   [[module.mounts]]
     source = "node_modules/flexsearch"
