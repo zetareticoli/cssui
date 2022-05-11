@@ -1,7 +1,7 @@
-[data-slider] {
-  --slider-height: 100vh; // Set the slider total height, slides inherits this value
-  --slider-direction: x; // Set the slider direction
-  --slider-scroll: mandatory;
+[data-fullpage] {
+  --fullpage-height: 100vh; // Set the fullpage total height, slides inherits this value
+  --fullpage-direction: x; // Set the fullpage direction
+  --fullpage-scroll: mandatory;
   --slide-size: 100%;
   --slide-snap-align: start;
   --slide-padding: 12px;
@@ -9,10 +9,10 @@
 
   position: relative;
   width: 100%;
-  height: var(--slider-height);
+  height: var(--fullpage-height);
 }
 
-[data-slider] {
+[data-fullpage] {
   &::before,
   &::after {
     position: absolute;
@@ -47,8 +47,11 @@
 
 [data-slides] {
   display: flex;
+  // flex-direction: column;
+  // height: 100vh;
   height: 100%;
-  scroll-snap-type: var(--slider-direction) var(--slider-scroll);
+  scroll-snap-type: var(--fullpage-direction) var(--fullpage-scroll);
+  // overflow-y: scroll;
   overflow-x: scroll;
   position: relative;
   z-index: 0;
@@ -59,7 +62,8 @@
     position: relative;
     padding: var(--slide-padding);
     scroll-snap-align: var(--slide-snap-align);
-    height: 100%;
+    min-height: 100&;
+    // min-height: 100vh;
     min-width: var(--slide-size);
     box-sizing: border-box;
   }
