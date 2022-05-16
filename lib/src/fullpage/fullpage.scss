@@ -5,9 +5,9 @@ $slidesNavigation: true;
 [data-fullpage] {
   --fullpage-height: 100vh; // Set the fullpage total height, slides inherits this value
   @if verticalScroll {
-    --fullpage-direction: y; // Set the fullpage direction to axis-y
+    --fullpage-direction: y; // DONT CHANGE - Set the fullpage direction to axis-y
   } @else {
-    --fullpage-direction: x; // Set the fullpage direction to axis-x (default)
+    --fullpage-direction: x; // DONT CHANGE - Set the fullpage direction to axis-x (default)
   }
   --fullpage-scroll: mandatory;
   --slide-size: 100%;
@@ -24,7 +24,7 @@ $slidesNavigation: true;
   display: flex;
   @if $verticalScroll {
     flex-direction: column;
-    height: 100vh;
+    height: var(--fullpage-height);
     overflow-y: scroll;
   } @else {
     height: 100%;
@@ -41,7 +41,7 @@ $slidesNavigation: true;
     padding: var(--slide-padding);
     scroll-snap-align: var(--slide-snap-align);
     @if verticalScroll {
-      min-height: 100vh;
+      min-height: var(--fullpage-height);
     } @else {
       min-height: 100%;
     }
@@ -49,7 +49,7 @@ $slidesNavigation: true;
     box-sizing: border-box;
   }
 
-  // Colors - Only for demo purpose
+  // Colors - ONLY FOR DEMO
 
   > [data-slide]:nth-child(1) {
     background: #6ee7b7;
