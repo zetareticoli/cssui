@@ -1,10 +1,15 @@
+// Features settings
+//
+// Changing $verticalScroll to 'true' changes the scroll direction
+// Changing $slidesNavigation to 'true' enables the left/right navigation arrows
 $verticalScroll: false;
 $slidesNavigation: true;
 
+// Component styles
 
 [data-fullpage] {
   --fullpage-height: 100vh; // Set the fullpage total height, slides inherits this value
-  @if verticalScroll {
+  @if verticalScroll == true {
     --fullpage-direction: y; // DONT CHANGE - Set the fullpage direction to axis-y
   } @else {
     --fullpage-direction: x; // DONT CHANGE - Set the fullpage direction to axis-x (default)
@@ -12,8 +17,9 @@ $slidesNavigation: true;
   --fullpage-scroll: mandatory;
   --slide-size: 100%;
   --slide-snap-align: start;
-  --slide-padding: 12px;
+  --slide-padding: 2rem;
   --slide-arrow-color: black;
+  --slide-arrow-padding: 2rem;
 
   position: relative;
   width: 100%;
@@ -22,7 +28,7 @@ $slidesNavigation: true;
 
 [data-slides] {
   display: flex;
-  @if $verticalScroll {
+  @if $verticalScroll == true {
     flex-direction: column;
     height: var(--fullpage-height);
     overflow-y: scroll;
@@ -40,7 +46,7 @@ $slidesNavigation: true;
     position: relative;
     padding: var(--slide-padding);
     scroll-snap-align: var(--slide-snap-align);
-    @if verticalScroll {
+    @if verticalScroll == true {
       min-height: var(--fullpage-height);
     } @else {
       min-height: 100%;
@@ -69,14 +75,14 @@ $slidesNavigation: true;
   }
 }
 
-@if $slidesNavigation {
+@if $slidesNavigation == true {
 
   [data-fullpage] {
 
     &::before,
     &::after {
       position: absolute;
-      top: calc(50% - var(--slide-padding));
+      top: calc(50% - var(--slide-arrow-padding));
       transform: translateY(-50%);
       display: block;
       content: "";
@@ -89,7 +95,7 @@ $slidesNavigation: true;
     }
   
     &::before {
-      left: calc(var(--slide-padding) * 2);
+      left: var(--slide-arrow-padding);
       transform: rotate(135deg);
       -webkit-transform: rotate(135deg);
   
@@ -99,7 +105,7 @@ $slidesNavigation: true;
     }
   
     &::after {
-      right: calc(var(--slide-padding) * 2);
+      right: var(--slide-arrow-padding);
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
     }
@@ -117,11 +123,11 @@ $slidesNavigation: true;
   }
 
   [data-slide-arrow="next"] {
-    right: var(--slide-padding);
+    right: var(--slide-arrow-padding);
   }
 
   [data-slide-arrow="prev"] {
-    left: var(--slide-padding);
+    left: var(--slide-arrow-padding);
   }
 } @else {
   [data-slide-arrow="prev"],
