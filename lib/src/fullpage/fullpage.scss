@@ -14,6 +14,7 @@ $slidesNavigation: true;
     --fullpage-direction: x; // DONT CHANGE - Set the fullpage direction to axis-x (default)
   }
   --fullpage-scroll: mandatory;
+  --slide-background: #cbd5e1;
   --slide-content-padding: calc(var(--slide-padding) * 2);
   --slide-size: 100%;
   --slide-snap-align: start;
@@ -43,6 +44,7 @@ $slidesNavigation: true;
   -webkit-overflow-scrolling: touch;
 
   > [data-slide] {
+    background-color: var(--slide-background);
     position: relative;
     padding: var(--slide-padding);
     scroll-snap-align: var(--slide-snap-align);
@@ -64,23 +66,22 @@ $slidesNavigation: true;
     }
   }
 
-  // Colors - ONLY FOR DEMO
+  // Slides background
 
   > [data-slide]:nth-child(1) {
-    background: #6ee7b7;
-    z-index: 90;
+    --slide-background: #6ee7b7;
   }
 
   > [data-slide]:nth-child(2) {
-    background: #67e8f9;
+    --slide-background: #67e8f9
   }
 
   > [data-slide]:nth-child(3) {
-    background: #93c5fd;
+    --slide-background: #93c5fd
   }
 
   > [data-slide]:nth-child(4) {
-    background: #c4b5fd;
+    --slide-background: #c4b5fd
   }
 }
 
