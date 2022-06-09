@@ -10639,15 +10639,12 @@ table {
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::after {
   top: 0; }
 
-.docs-content > h2[id]::before, .docs-content > [id].h2::before,
-.docs-content > h3[id]::before,
-.docs-content > [id].h3::before,
-.docs-content > h4[id]::before,
-.docs-content > [id].h4::before {
-  display: block;
-  height: 6rem;
-  margin-top: -6rem;
-  content: ""; }
+.docs-content > h2[id], .docs-content > [id].h2,
+.docs-content > h3[id],
+.docs-content > [id].h3,
+.docs-content > h4[id],
+.docs-content > [id].h4 {
+  scroll-margin-top: 6rem; }
 
 .anchor {
   visibility: hidden;

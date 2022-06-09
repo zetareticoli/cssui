@@ -1,0 +1,205 @@
+// Settings
+// Set $verticalScroll to 'true' changes the scroll direction
+// Set $slidesNavigation to 'true' enables the left/right navigation arrows
+$verticalScroll: false;
+$slidesNavigation: true;
+
+// Component styles
+
+[data-fullpage] {
+  --fullpage-height: 100vh; // Set the fullpage total height, slides inherits this value
+  @if $verticalScroll == true {
+    --fullpage-direction: y; // DONT CHANGE - Set the fullpage direction to axis-y
+  } @else {
+    --fullpage-direction: x; // DONT CHANGE - Set the fullpage direction to axis-x (default)
+  }
+  --fullpage-scroll: mandatory;
+  --slide-background: #cbd5e1;
+  --slide-content-padding: calc(var(--slide-padding) * 2);
+  --slide-size: 100%;
+  --slide-snap-align: start;
+  --slide-padding: 2rem;
+  --slide-arrow-color: #000;
+  --slide-arrow-size: .675rem;
+
+  position: relative;
+  width: 100%;
+  height: var(--fullpage-height);
+}
+
+[data-slides] {
+  display: flex;
+  @if $verticalScroll == true {
+    flex-direction: column;
+    height: var(--fullpage-height);
+    overflow-y: scroll;
+  } @else {
+    height: 100%;
+    overflow-x: scroll;
+  }
+  scroll-snap-type: var(--fullpage-direction) var(--fullpage-scroll);
+  position: relative;
+  z-index: 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  > [data-slide] {
+    background-color: var(--slide-background);
+    position: relative;
+    padding: var(--slide-padding);
+    scroll-snap-align: var(--slide-snap-align);
+    @if $verticalScroll == true {
+      min-height: var(--fullpage-height);
+    } @else {
+      min-height: 100%;
+    }
+    min-width: var(--slide-size);
+    box-sizing: border-box;
+  }
+
+  [data-slide-content] {
+    @if $verticalScroll == true {
+      padding-top: var(--slide-content-padding);
+      padding-bottom: var(--slide-content-padding);
+    } @else {
+      padding: var(--slide-content-padding);
+    }
+  }
+
+  // Slides background
+
+  > [data-slide]:nth-child(1) {
+    --slide-background: #6ee7b7;
+  }
+
+  > [data-slide]:nth-child(2) {
+    --slide-background: #67e8f9
+  }
+
+  > [data-slide]:nth-child(3) {
+    --slide-background: #93c5fd
+  }
+
+  > [data-slide]:nth-child(4) {
+    --slide-background: #c4b5fd
+  }
+}
+
+@if $slidesNavigation == true {
+
+  [data-fullpage] {
+
+    &::before,
+    &::after {
+      @if $verticalScroll not true {
+        top: calc(50% - var(--slide-arrow-size));
+        transform: translateY(-50%);
+      }
+      position: absolute;
+      display: block;
+      content: "";
+      border: solid var(--slide-arrow-color);
+      border-width: 0 3px 3px 0;
+      padding: var(--slide-arrow-size);
+      outline: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+  
+    &::before {
+      @if $verticalScroll == true {
+        top: var(--slide-padding);
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        left: calc(50% - var(--slide-arrow-size));
+      } @else {
+        left: calc(var(--slide-padding) + var(--slide-arrow-size));
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+  
+      [data-slides] > [data-slide="1"] ~ & {
+        display: none;
+      }
+    }
+  
+    &::after {
+      @if $verticalScroll == true {
+        top: auto;
+        bottom: var(--slide-padding);
+        left: calc(50% - var(--slide-arrow-size));
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      } @else {
+        right: calc(var(--slide-padding) + var(--slide-arrow-size));
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+  }
+
+  [data-slide-arrow] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0;
+    z-index: 100;
+  }
+
+  [data-slide-arrow="next"] {
+    right: var(--slide-padding);
+  }
+
+  [data-slide-arrow="prev"] {
+    left: var(--slide-padding);
+  }
+} @else {
+  [data-slide-arrow="prev"],
+  [data-slide-arrow="next"] {
+    display: none;
+  }
+}
+
+// [data-slide-nav="dots"] {
+//   position: absolute;
+//   bottom: var(--slide-padding);
+//   left: var(--slide-padding);
+//   width: 200px;
+//   text-align: center;
+//   z-index: 10;
+//   display: flex;
+// }
+
+// [data-slide-nav="dots"] > a {
+//   display: inline-block;
+//   height: 15px;
+//   width: 15px;
+//   border-radius: 50%;
+//   background-color: black;
+//   margin: 0 10px 0 10px;
+
+//   &:active {
+//     background-color: red;
+//   }
+// }
+
+
+// [data-slide-nav="dots"] > a:first-child,
+// [data-slide="1"]:target ~ [data-slide-nav="dots"] > a:first-child {
+//   background: white;
+// }
+
+// [data-slide="2"]:target ~ [data-slide-nav="dots"] > a:nth-child(2) {
+//   background: white;
+// }
+
+// [data-slide="3"]:target ~ [data-slide-nav="dots"] > a:nth-child(3) {
+//   background: white;
+// }
+
+// [data-slide="4"]:target ~ [data-slide-nav="dots"] > a:nth-child(4) {
+//   background: white;
+// }
