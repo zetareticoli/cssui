@@ -19,7 +19,7 @@ The basic slider is horizontal and has a single handle that can be moved with th
   <link rel="stylesheet" href="/cssui/cssui.min.css">
   <link rel="stylesheet" href="/cssui/cssui.range.min.css">
 
-  <input type="range" data-range />
+  <input type="range" min="1" max="100" value="50" data-range />
 </div>
 
 ## Usage
@@ -27,33 +27,6 @@ The fullpage component consists in a list of slides which occupy the entire view
 
 ## Customization
 Customizing the fullpage slider is pretty simple and straightforward. You can do it with few changes to Sass variables (functionality) and CSS Custom Properties (layout).
-
-### Set direction
-You can set the slider direction by changing `$verticalScroll` Sass variable. Setting it to `true` changes the entire slider layout suiting it for vertical scrolling. 
-
-It's set `false` by default.
-
-### Enable navigation
-You can enable/disable the navigation arrows by changing the `$slideNavigation` Sass variable. 
-
-It's set `true` by default.
-
-### Change background
-Each slide has a default background color set by `--slide-background` variable.
-
-```css
-[data-fullpage] {
-  --slide-background: #cbd5e1;
-}
-```
-
-You can change the background color or switch to a background image simply overriding this variable for a selected slide as following:
-
-```css
-  [data-slide]:nth-child(1) {
-    --slide-background: #6ee7b7;
-  }
-```
 
 ## Variables
 
