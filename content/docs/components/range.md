@@ -1,7 +1,7 @@
 ---
 title: "Range"
 description: "Drag a handle to select a numeric value."
-lead: ""
+lead: "Drag a handle to select a numeric value"
 date: 2022-06-06T11:40:00+01:00
 lastmod: 2022-06-06T11:40:00+01:00
 draft: false
@@ -13,30 +13,40 @@ weight: 610
 toc: true
 ---
 
-The basic slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.
+The **range slider** is horizontal and has a single handle that can be moved with the mouse, finger or by using the arrow keys once in focus.
 
 <div class="preview">
   <link rel="stylesheet" href="/cssui/cssui.min.css">
   <link rel="stylesheet" href="/cssui/cssui.range.min.css">
 
+  <input type="range" min="1" max="100" value="50" data-range="rounded" />
   <input type="range" min="1" max="100" value="50" data-range />
 </div>
 
 ## Usage
-The fullpage component consists in a list of slides which occupy the entire viewport. From a gallery sliders to editorial news, the range of usage is various. It's completely responsive and customizable.
+The range slider uses the default HTML5 tag:
+
+```html
+<input type="range" min="1" max="100" value="50" data-range />
+```
+
+It comes with preset attributes `min`,`max` and `value` but you can customize them as you prefer.
 
 ## Customization
-Customizing the fullpage slider is pretty simple and straightforward. You can do it with few changes to Sass variables (functionality) and CSS Custom Properties (layout).
+The range slider comes with two different layouts: default and rounded.
+
+You can switch to the secondo one by adding the `rounded` value to `data-range` attribute (see the example above).
+
+If you want to create your own style, use the variables.
 
 ## Variables
 
 List of variables used. Customize the component by changing or overriding these values:
 
 ```css
-  --slide-background: #cbd5e1;
-  --slide-content-padding: calc(var(--slide-padding) * 2);
-  --slide-size: 100%;
-  --slide-padding: 2rem;
-  --slide-arrow-color: #000;
-  --slide-arrow-size: .675rem;
+	--range-thumb-color: var(--cssui-primary);
+	--range-thumb-height: 25px;
+	--range-thumb-width: 25px; 
+	--range-track-height: auto;
+	--range-track-color: var(--cssui-gray-light);
 ```
