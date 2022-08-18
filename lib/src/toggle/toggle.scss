@@ -3,6 +3,10 @@
    --toggle-height: calc(var(--toggle-width)/2);
    --toggle-radius: 18px;
    --toggle-background: var(--cssui-gray-light);
+   --toggle-padding: 10px;
+   --toggle-animation: ease-in-out;
+   --toggle-animation-time: .2s;
+   --toggle-switch-color: #fff;
 }
 
 [data-toggle] {
@@ -10,22 +14,20 @@
    display: block;
    width: var(--toggle-width);
    height: var(--toggle-height);
-   padding: 10px;
+   padding: var(--toggle-padding);
    border-radius: var(--toggle-radius);
    background: var(--toggle-background);
-   font-size: 12px;
-   line-height: 16px;
    cursor: pointer;
 }
 
 [data-toggle-input],
 [data-toggle-input]:active {
+   visibility: hidden;
    width: 0;
    height: 0;
    border: none;
    outline: none;
    opacity: 0;
-   visibility: hidden;
 }
 
 [data-toggle]:before {
@@ -39,11 +41,10 @@
    width: var(--toggle-height);
    height: var(--toggle-height);
    border-radius: 100%;
-   background: white;
-   // box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+   background: var(--toggle-switch-color);
    line-height: 34px;
    text-indent: var(--toggle-height);
-   transition: left .2s ease-in-out;
+   transition: left var(--toggle-animation-time) var(--toggle-animation);
 }
 
 [data-toggle-input] + [data-toggle] {
