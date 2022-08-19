@@ -22,12 +22,7 @@
 
 [data-toggle-input],
 [data-toggle-input]:active {
-   visibility: hidden;
-   width: 0;
-   height: 0;
-   border: none;
-   outline: none;
-   opacity: 0;
+   display: none;
 }
 
 [data-toggle]:before {
