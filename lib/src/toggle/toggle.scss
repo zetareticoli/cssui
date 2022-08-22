@@ -1,0 +1,56 @@
+[data-toggle] {
+   --toggle-width: 60px;
+   --toggle-height: calc(var(--toggle-width)/2);
+   --toggle-radius: 18px;
+   --toggle-background: var(--cssui-gray-light);
+   --toggle-padding: 10px;
+   --toggle-animation: ease-in-out;
+   --toggle-animation-time: .2s;
+   --toggle-switch-color: #fff;
+}
+
+[data-toggle] {
+   position: relative;
+   display: block;
+   width: var(--toggle-width);
+   height: var(--toggle-height);
+   padding: var(--toggle-padding);
+   border-radius: var(--toggle-radius);
+   background: var(--toggle-background);
+   cursor: pointer;
+}
+
+[data-toggle-input],
+[data-toggle-input]:active {
+   display: none;
+}
+
+[data-toggle]:before {
+   position: absolute;
+   top: 0;
+   right: auto;
+   left: 0;
+   z-index: 1;
+   content: '';
+   display: block;
+   width: var(--toggle-height);
+   height: var(--toggle-height);
+   border-radius: 100%;
+   background: var(--toggle-switch-color);
+   line-height: 34px;
+   text-indent: var(--toggle-height);
+   transition: left var(--toggle-animation-time) var(--toggle-animation);
+}
+
+[data-toggle-input] + [data-toggle] {
+   box-shadow: inset 0 0 0 0 var(--cssui-primary), 0 0 0 2px var(--toggle-background);
+}
+
+[data-toggle-input]:checked + [data-toggle]:before {
+   left: calc(100% - var(--toggle-height));
+   box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, .3);
+}
+
+[data-toggle-input]:checked+[data-toggle] {
+   box-shadow: inset 0 0 0 18px var(--cssui-primary), 0 0 0 2px var(--cssui-primary);
+}
