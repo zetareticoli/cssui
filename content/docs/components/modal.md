@@ -88,7 +88,7 @@ As far CSSUI is a Pure CSS library, the modal component **doesn't provide any pa
 Try <a href="https://www.npmjs.com/package/body-scroll-lock" target="_blank">body-scroll-lock</a> to enable it.
 ## Variables
 
-List of variables used. Customize the component's design by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
   --modal-background: rgb(255, 255, 255);

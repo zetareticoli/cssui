@@ -72,7 +72,7 @@ You can navigate tabs using keyboard by default. Press TAB it will move the focu
 
 ## Variables
 
-List of variables used. Customize the component's design by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
   --tab-border-color: #f3f4f6;
