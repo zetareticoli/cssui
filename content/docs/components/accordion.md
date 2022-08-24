@@ -91,7 +91,7 @@ Each item is composed by a title and content part:
 
 ## Variables
 
-List of variables used. Customize the component's design by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
 --accordion-border-color: var(--cssui-gray-lighter);

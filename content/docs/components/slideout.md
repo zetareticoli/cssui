@@ -55,7 +55,7 @@ The Slideout panel should have the `data-slideout-panel` attribute. Apart from `
 ```
 ## Variables
 
-List of variables used. Customize the component's design by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
   --slideout-animation: left .2s ease-in-out;
