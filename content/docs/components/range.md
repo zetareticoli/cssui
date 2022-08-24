@@ -41,7 +41,7 @@ If you want to create your own style, use the variables.
 
 ## Variables
 
-List of variables used. Customize the component by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
 	--range-thumb-color: var(--cssui-primary);

@@ -52,7 +52,7 @@ Dropdown is built using `<details>` HTML5 tag, which creates a disclosure widget
 
 ## Variables
 
-List of variables used. Customize the component's design by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
   --dropdown-border-radius: var(--cssui-radius);

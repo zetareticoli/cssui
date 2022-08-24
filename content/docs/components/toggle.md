@@ -25,7 +25,7 @@ Commonly used in websites, mobile apps, and other software, it provides the user
 
 ## Usage
 
-Add the `data-toggle-input` and `data-toggle` attributes to a standard `<input type="checkbox">` and `<label>` HTML tags respectively. Done.
+Add the `data-toggle-input` and `data-toggle` attributes to a standard `<input type="checkbox">` and `<label>` HTML tags respectively.
 
 ### Code example
 
@@ -43,7 +43,7 @@ The toggle comes with the following customization options:
 
 ## Variables
 
-List of variables used. Customize the component's design by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
    --toggle-width: 60px;

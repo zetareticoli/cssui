@@ -98,7 +98,7 @@ You can change the background color or switch to a background image simply overr
 
 ## Variables
 
-List of variables used. Customize the component by changing or overriding these values:
+This is the list of variables related to this component. You can customize the design by changing or overriding these values:
 
 ```css
   --slide-background: #cbd5e1;
