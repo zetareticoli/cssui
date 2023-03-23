@@ -5,9 +5,27 @@
 
 # CSSUI
 
-CSSUI is a library of interactive components realized in pure HTML and CSS. It includes frequently used components as Accordion, Modal, Tabs and more.
+CSSUI is a Github repository containing a collection of CSS user interface components that can be used to build modern and responsive web applications.
+
+## Getting Started
+
+To get started with using the components in this repository, you can download or clone the repository to your local machine. Once you have the files, you can copy the desired CSS code and paste it into your project's CSS file.
 
 Demo and documentation available [here](https://www.cssui.dev/).
+
+### Components
+
+- Accordion
+- Dropdown
+- Fullpage
+- Modal
+- Range
+- Slideout
+- Tabs
+- Toggle
+- Tooltip
+
+Each component has its own CSS file that contains the styles for that component. You can use the components individually or combine them to create more complex user interfaces.
 
 ## Installation
 
@@ -28,8 +46,16 @@ Each component folder includes two files:
 1. HTML template file
 2. CSS stylesheet.
 
-
 You can use template files as partial or copy/paste the code into the project's files according to your needs.
+
+### Customization
+
+All the CSS code in this repository is fully customizable, so you can modify the styles to fit your specific design needs. You can also add your own custom styles to the components to further personalize them.
+
+## Contributing
+
+If you would like to contribute to this repository, please submit a pull request with your changes. All contributions are welcome and appreciated.
+
 
 ## Support
 
