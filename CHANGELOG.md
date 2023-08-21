@@ -4,11 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-// # v1.0.0
-// This is a draft of release notes
-// - Added two different Carousel components
-// - Added Scroll position component
-// - Added CDN support
+# v1.0.0
+## Added
+- Two different Carousel components
+- Scroll position component
+- CDN support
 
 # v0.3.0
 ## Added
