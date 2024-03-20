@@ -1,5 +1,5 @@
 {
-  "arch": "x64",
+  "arch": "arm64",
   "extended": true,
   "os": "darwin",
   "version": "0.84.4"

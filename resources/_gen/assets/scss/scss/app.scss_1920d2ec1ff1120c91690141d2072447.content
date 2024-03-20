@@ -9671,7 +9671,13 @@ body {
   font-size: 1.125rem; }
 
 .lead {
-  color: #6c757d; }
+  color: #343a40; }
+
+.w-100 {
+  width: 100%; }
+
+.pt-md {
+  padding-top: 16px; }
 
 /** Theme variables */
 /** Theme styles */
@@ -10692,10 +10698,12 @@ p.meta {
   margin-bottom: 2rem;
   transition: transform 0.3s; }
 
-.home .card:hover,
 .contributors.list .card:hover,
 .blog.list .card:hover {
   transform: scale(1.025); }
+
+.card-featured {
+  background-color: #f1f1f1; }
 
 .home .card-body,
 .contributors.list .card-body,
@@ -10708,6 +10716,10 @@ p.meta {
 
 .blog-footer {
   text-align: center; }
+
+.card-meta {
+  color: #6c757d;
+  font-size: 0.875rem; }
 
 .docs-links,
 .docs-toc {
