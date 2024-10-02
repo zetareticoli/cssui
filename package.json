@@ -31,7 +31,8 @@
     "check": "exec-bin bin/hugo/hugo version",
     "copy:katex-fonts": "shx cp ./node_modules/katex/dist/fonts/* ./static/fonts/",
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@babel/cli": "^7.14",
