@@ -64,7 +64,7 @@ If you want to help improve this repository, send us a pull request with your ch
 
 MIT License
 
-Copyright (c) 2021 Francesco Improta
+Copyright (c) 2025 Francesco Improta
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
