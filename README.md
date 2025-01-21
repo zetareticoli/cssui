@@ -13,18 +13,6 @@ To use the components in this repository, download or clone it to your local mac
 
 Demo and documentation available [here](https://www.cssui.dev/).
 
-### Components
-
-- Accordion
-- Dropdown
-- Fullpage
-- Modal
-- Range
-- Slideout
-- Tabs
-- Toggle
-- Tooltip
-
 Each component has its own CSS file with its specific styles. You can use these components on their own or combine them to build more complex user interfaces.
 
 ## Installation
