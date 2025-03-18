@@ -30,6 +30,7 @@
   publish = "public"
   autoLaunch = false
 
-[security]
-  [security.cors]
-    allowOrigins = ["*"]
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
