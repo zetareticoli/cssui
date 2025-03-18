@@ -4,7 +4,7 @@ description: "Allows users to browse through a set of images or content slides, 
 lead: "Allows users to browse through a set of images or content slides, typically with navigation controls like arrows or dots."
 date: 2025-03-18T09:00:00+01:00
 lastmod: 2025-03-18T09:00:00+01:00
-draft: true
+draft: false
 images: []
 menu:
   docs:
