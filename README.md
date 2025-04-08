@@ -5,13 +5,13 @@
 
 # CSSUI
 
-CSSUI is a front-end library that includes a variety of CSS user interface components. These can be used to construct modern and responsive web applications.
+CSSUI is a front-end library that includes various CSS user interface components. These components can be used to construct modern, responsive web applications.
 
 ## Getting Started
 
-To use the components in this repository, download or clone it to your local machine. Once you have the files, copy the necessary CSS code and paste it into your project's CSS file.
+To use the components in this repository, download or clone them on your local machine. Once you have the files, copy the necessary CSS code and paste it into your project's CSS file.
 
-Demo and documentation available [here](https://www.cssui.dev/).
+Demo and documentation are available [here](https://www.cssui.dev/).
 
 Each component has its own CSS file with its specific styles. You can use these components on their own or combine them to build more complex user interfaces.
 
@@ -38,7 +38,7 @@ You can use template files as partial or copy/paste the code into the project's 
 
 ### Customization
 
-You can customize all the CSS code in this repository to fit your design needs. You can also add your own styles to the components for more customization.
+You can customize all the CSS code in this repository to fit your design needs. You can also add your styles to the components for more customization.
 
 ## Contributing
 
