@@ -1,0 +1,58 @@
+:root {
+            --carousel-width: 300px;
+            --carousel-height: 200px;
+        }
+
+        .carousel {
+            position: relative;
+            width: var(--carousel-width);
+            height: var(--carousel-height);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            width: 100%;
+            height: var(--carousel-height);
+            scroll-snap-align: start;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            display: flex;
+            transform: translateX(-50%);
+            gap: 8px;
+        }
+
+        .nav a {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav a:hover {
+            background-color: gray;
+        }

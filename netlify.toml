@@ -29,3 +29,8 @@
   port = 8888
   publish = "public"
   autoLaunch = false
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
