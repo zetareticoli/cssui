@@ -3,7 +3,7 @@
   <div class="row justify-content-center">
     <div class="col-lg-12 text-center">
       <!-- <h1 class="mt-0">{{ .Title }}</h1> -->
-      <img src="/images/cssui-logo.svg" alt="">
+      <img src="/images/cssui-logo.svg" width="280" height="80" decoding="async" alt="CSSUI">
     </div>
     <div class="col-lg-12 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
@@ -77,7 +77,10 @@
           <div class="card-body row">
             <div class="col-5">
                 <a class="d-block" href="https://designtokens.pro">
-                  <img class="w-100" src="/images/course-pack.png" alt="Design Tokens Pro cover">
+                  <picture>
+                    <source type="image/webp" srcset="/images/course-pack.webp">
+                    <img class="w-100" src="/images/course-pack.png" width="355" height="468" loading="lazy" decoding="async" alt="Design Tokens Pro cover">
+                  </picture>
                 </a>
               </div>
               <div class="col-11">

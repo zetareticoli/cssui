@@ -71,6 +71,7 @@
   {{ if .Site.Params.options.flexSearch -}}
     <script src="{{ $index.RelPermalink }}" defer></script>
   {{ end -}}
+  <script src="/js/vendor/prism.js" defer></script>
 {{ else -}}
   {{ $js := $js | minify | fingerprint "sha512" -}}
   {{ $index := $index | minify | fingerprint "sha512" -}}
@@ -96,4 +97,5 @@
   {{ if .Site.Params.options.flexSearch -}}
     <script src="{{ $index.RelPermalink }}" integrity="{{ $index.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
+  <script src="/js/vendor/prism.js" defer></script>
 {{ end -}}

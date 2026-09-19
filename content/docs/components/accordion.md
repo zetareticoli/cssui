@@ -11,15 +11,13 @@ menu:
     parent: "components"
 weight: 610
 toc: true
+cssuiComponent: "accordion"
 ---
 
 Click headers to expand/collapse content that is broken into logical sections.
 
 <div class="preview">
-  <link rel="stylesheet" href="/cssui/cssui.min.css">
-  <link rel="stylesheet" href="/cssui/cssui.accordion.min.css">
-
-  <section data-accordion>
+<section data-accordion>
     <div data-accordion-item>
       <input type="checkbox" id="panel-1">
       <label for="panel-1">

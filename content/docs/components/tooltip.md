@@ -11,15 +11,13 @@ menu:
     parent: "components"
 weight: 610
 toc: true
+cssuiComponent: "tooltip"
 ---
 
 Hover or focus over the links below to see tooltips:
 
 <div class="preview text-center">
-  <link rel="stylesheet" href="/cssui/cssui.min.css">
-  <link rel="stylesheet" href="/cssui/cssui.tooltip.min.css">
-
-  <a href="#" data-tooltip alt="Alt text" title="This is a link" role="tooltip" aria-label="Tooltip message">Hover me</a>
+<a href="#" data-tooltip alt="Alt text" title="This is a link" role="tooltip" aria-label="Tooltip message">Hover me</a>
 </div>
 
 ## Usage

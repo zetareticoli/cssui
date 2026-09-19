@@ -10,13 +10,13 @@
 /** Import highlight.js */
 // @import "highlight.js/scss/github-dark-dimmed";
 
-/** Import KaTeX */
-@import "katex/dist/katex";
+/** KaTeX disabled (params.options.kaTex = false) — do not import unused CSS */
 
 /** Import theme styles */
-@import "common/fonts";
+// Jost @font-face unused (site uses system UI stack) — skip fonts import
+// @import "common/fonts";
 @import "common/global";
-@import "common/dark";
+// @import "common/dark"; // darkMode = false
 @import "components/alerts";
 @import "components/buttons";
 @import "components/code";
@@ -25,7 +25,7 @@
 @import "components/forms";
 @import "components/images";
 // @import "components/mermaid";
-@import "components/search";
+// @import "components/search"; // flexSearch = false
 @import "components/tables";
 @import "layouts/footer";
 @import "layouts/header";

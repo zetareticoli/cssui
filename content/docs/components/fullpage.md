@@ -11,15 +11,13 @@ menu:
     parent: "components"
 weight: 610
 toc: true
+cssuiComponent: "fullpage"
 ---
 
 Navigate fullpage slides by swiping horizzontalyy on touch devices or trackpad. In alternative, click on the left/right arrows to move forward or go back.
 
 <div class="preview">
-  <link rel="stylesheet" href="/cssui/cssui.min.css">
-  <link rel="stylesheet" href="/cssui/cssui.fullpage.min.css">
-
-  <div data-fullpage>
+<div data-fullpage>
     <div data-slides>
       <section id="slide-1" data-slide="1">
         <div data-slide-content>

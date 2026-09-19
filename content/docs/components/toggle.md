@@ -11,15 +11,13 @@ menu:
     parent: "components"
 weight: 610
 toc: true
+cssuiComponent: "toggle"
 ---
 
 Commonly used in websites, mobile apps, and other software, it provides the users a way to choose between two different states.
 
 <div class="preview">
-  <link rel="stylesheet" href="/cssui/cssui.min.css">
-  <link rel="stylesheet" href="/cssui/cssui.toggle.min.css">
-  
-  <input type="checkbox" id="toggle" name="toggle" data-toggle-input checked/>
+<input type="checkbox" id="toggle" name="toggle" data-toggle-input checked/>
   <label for="toggle" data-toggle></label>
 </div>
 
