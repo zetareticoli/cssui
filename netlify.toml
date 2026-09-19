@@ -11,10 +11,10 @@
   command = "hugo --gc --minify"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.next]
   command = "hugo --gc --minify"
