@@ -11,15 +11,13 @@ menu:
     parent: "components"
 weight: 610
 toc: true
+cssuiComponent: "range"
 ---
 
 The **range slider** is horizontal and has a single handle that can be moved with the mouse, finger or by using the arrow keys once in focus.
 
 <div class="preview">
-  <link rel="stylesheet" href="/cssui/cssui.min.css">
-  <link rel="stylesheet" href="/cssui/cssui.range.min.css">
-
-  <input type="range" min="1" max="100" value="50" data-range="rounded" />
+<input type="range" min="1" max="100" value="50" data-range="rounded" />
   <input type="range" min="1" max="100" value="50" data-range />
 </div>
 

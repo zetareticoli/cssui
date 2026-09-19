@@ -11,15 +11,13 @@ menu:
     parent: "components"
 weight: 610
 toc: true
+cssuiComponent: "dropdown"
 ---
 
 Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re toggled by clicking, not by hovering.
 
 <div class="preview">
-  <link rel="stylesheet" href="/cssui/cssui.min.css">
-  <link rel="stylesheet" href="/cssui/cssui.dropdown.min.css">
-
-  <details data-dropdown>
+<details data-dropdown>
     <summary>
       Select an option...
     </summary>

@@ -11,15 +11,13 @@ menu:
     parent: "components"
 weight: 610
 toc: true
+cssuiComponent: "tabs"
 ---
 
 Click tabs to swap between content that is broken into logical sections. Tabs come with a horizontal navigation and a simple, clean style.
 
 <div class="preview">
-  <link rel="stylesheet" href="/cssui/cssui.min.css">
-  <link rel="stylesheet" href="/cssui/cssui.tabs.min.css">
-
-  <div data-tabs role="tablist" aria-label="Sample tabs">
+<div data-tabs role="tablist" aria-label="Sample tabs">
     <input id="tab1" type="radio" name="tab" data-tab="tab1" role="tab" aria-controls="tab-panel1" checked="checked" />
     <input id="tab2" type="radio" name="tab" data-tab="tab2" role="tab" aria-controls="tab-panel2" />
     <input id="tab3" type="radio" name="tab" data-tab="tab3" role="tab" aria-controls="tab-panel3" />

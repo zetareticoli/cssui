@@ -3,7 +3,7 @@
   <div class="row justify-content-center">
     <div class="col-lg-12 text-center">
       <!-- <h1 class="mt-0">{{ .Title }}</h1> -->
-      <img src="/images/cssui-logo.svg" alt="">
+      <img src="/images/cssui-logo.svg" width="280" height="80" decoding="async" alt="CSSUI">
     </div>
     <div class="col-lg-12 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
@@ -74,13 +74,16 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="card card-featured pt-md">
-          <div class="card-body row">
-            <div class="col-5">
+          <div class="card-body row align-items-center g-3">
+            <div class="col-12 col-md-4">
                 <a class="d-block" href="https://designtokens.pro">
-                  <img class="w-100" src="/images/course-pack.png" alt="Design Tokens Pro cover">
+                  <picture>
+                    <source type="image/webp" srcset="/images/course-pack.webp">
+                    <img class="w-100" src="/images/course-pack.png" width="355" height="468" loading="lazy" decoding="async" alt="Design Tokens Pro cover">
+                  </picture>
                 </a>
               </div>
-              <div class="col-11">
+              <div class="col-12 col-md-8">
                 <h3 class="h4 card-title"><a href="https://designtokens.pro">CSS and Design Tokens</a></h3>
                 <p class="card-text text-secondary">Master the power of design tokens for front-end with this definitive guide.<br> <strong><a href="https://designtokens.pro/join">Reserve your slot</a></strong> now for early bird price!</p>
               </div>

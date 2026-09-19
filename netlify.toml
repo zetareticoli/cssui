@@ -11,10 +11,14 @@
   command = "hugo --gc --minify"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL/"
+  [context.deploy-preview.environment]
+    HUGO_CANONIFYURLS = "false"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL/"
+  [context.branch-deploy.environment]
+    HUGO_CANONIFYURLS = "false"
 
 [context.next]
   command = "hugo --gc --minify"
